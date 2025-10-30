@@ -1,0 +1,183 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SortIt.ViewModels"
+             x:Class="SortIt.Views.ProfilePage"
+             Background="{DynamicResource PageBackgroundBrush}"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+
+    <!-- словарь с текстами (локализация) -->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vm:LanguageViewModel x:Key="Lang" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!-- основной контекст страницы ProfileViewModel -->
+    <ContentPage.BindingContext>
+        <vm:ProfileViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="15" Spacing="20">
+
+        <Image Source="game_logo.png"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                Aspect="AspectFit"/>
+        <!-- Аккаунт -->
+        <Frame Padding="16"
+                CornerRadius="20"
+                HasShadow="True"
+                Style="{DynamicResource GlobalFrameStyle}">
+
+            <Grid ColumnDefinitions="auto,*,auto" VerticalOptions="Center">
+
+                <!-- Аватар -->
+                <Image Source="{Binding Avatar}"
+                        HeightRequest="60"
+                        WidthRequest="60"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start" />
+
+                <!-- Имя -->
+                <VerticalStackLayout Grid.Column="1"
+                                        Padding="10,0"
+                                        VerticalOptions="Center">
+                    <Label Text="{Binding Name}"
+                            FontSize="20"
+                            HorizontalTextAlignment="Start"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            Style="{DynamicResource GlobalTitleLabelStyle}"/>
+                </VerticalStackLayout>
+
+                <!-- Кнопка редактирования -->
+                <Frame Grid.Column="2"
+                        WidthRequest="36"
+                        HeightRequest="36"
+                        CornerRadius="18"
+                        BackgroundColor="#2E7D32"
+                        Padding="0"
+                        HasShadow="False"
+                        HorizontalOptions="End"
+                        VerticalOptions="Start">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnEditProfile" />
+                    </Frame.GestureRecognizers>
+                    <Image Source="pencil.png"
+                            Aspect="AspectFit"
+                            WidthRequest="15"
+                            HeightRequest="15"/>
+                </Frame>
+            </Grid>
+        </Frame>
+
+        <!-- Уровень -->
+        <Frame Padding="16"
+                CornerRadius="20"
+                HasShadow="True"
+                Style="{DynamicResource GlobalFrameStyle}">
+
+            <Grid ColumnDefinitions="*,auto"
+                    RowDefinitions="auto,auto,auto">
+
+                <Label Text="{Binding Source={StaticResource Lang}, Path=Label_EcoLevel}"
+                        Grid.Row="0" Grid.Column="0"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        Style="{DynamicResource GlobalTitleLabelStyle}" />
+
+                <Label Text="{Binding LevelText}"
+                        Grid.Row="0" Grid.Column="1"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalTextAlignment="Center"
+                        Style="{DynamicResource GlobalTitleLabelStyle}" />
+
+                <!-- Ранг -->
+                <Label Text="{Binding RankText}"
+                        Grid.Row="1" Grid.ColumnSpan="2"
+                        FontSize="14"
+                        Margin="0,15,0,0"
+                        Style="{DynamicResource GlobalLabelStyle}"/>
+
+                <!-- Прогресс XP -->
+                <Grid Grid.Row="2" Grid.ColumnSpan="2"
+                        ColumnDefinitions="*,auto"
+                        Margin="0,8,0,0"
+                        VerticalOptions="Center">
+
+                    <ProgressBar Progress="{Binding XpProgress}"
+                                    Grid.Column="0"
+                                    HeightRequest="2"
+                                    Margin="0,6,0,0"
+                                    ProgressColor="#8BC34A"
+                                    ScaleY="2"
+                                    BackgroundColor="#E6F3E6" />
+
+                    <Label Text="{Binding XpDisplay}"
+                            Grid.Column="1"
+                            Margin="8,0,0,0"
+                            FontSize="12"
+                            TextColor="#757575"
+                            VerticalTextAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </Frame>
+
+        <!-- Статистика -->
+        <Frame Padding="16"
+                CornerRadius="20"
+                HasShadow="True"
+                Style="{DynamicResource GlobalFrameStyle}">
+
+            <VerticalStackLayout Spacing="10">
+                <Label Text="{Binding Source={StaticResource Lang}, Path=Label_Statistics}"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        Style="{DynamicResource GlobalTitleLabelStyle}" />
+
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+
+                    <!-- Правильно -->
+                    <Border StrokeShape="RoundRectangle 14" BackgroundColor="#E8F5E9" Padding="12">
+                        <VerticalStackLayout HorizontalOptions="Center">
+                            <Label Text="{Binding Source={StaticResource Lang}, Path=LabelStats_Correct}"
+                                    FontAttributes="Bold"
+                                    TextColor="#2E7D32" />
+                            <Label Text="{Binding TotalCorrect}"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Неправильно -->
+                    <Border Grid.Column="1" StrokeShape="RoundRectangle 14" BackgroundColor="#FFEBEE" Padding="12">
+                        <VerticalStackLayout HorizontalOptions="Center">
+                            <Label Text="{Binding Source={StaticResource Lang}, Path=LabelStats_Wrong}"
+                                    FontAttributes="Bold"
+                                    TextColor="#C62828" />
+                            <Label Text="{Binding TotalWrong}"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Border>
+                </Grid>
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Растение -->
+        <Image Source="{Binding PlantImage}"
+                WidthRequest="200"
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                Aspect="AspectFit">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding ResetStatsCommand}" />
+            </Image.GestureRecognizers>
+        </Image>
+
+    </VerticalStackLayout>
+</ContentPage>
