@@ -61,11 +61,678 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Apple core.
+        /// </summary>
+        internal static string AppleCore {
+            get {
+                return ResourceManager.GetString("AppleCore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Banana peel.
+        /// </summary>
+        internal static string BananaPeel {
+            get {
+                return ResourceManager.GetString("BananaPeel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Battery.
+        /// </summary>
+        internal static string Battery {
+            get {
+                return ResourceManager.GetString("Battery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cardboard box.
+        /// </summary>
+        internal static string Box {
+            get {
+                return ResourceManager.GetString("Box", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Light bulb.
+        /// </summary>
+        internal static string Bulb {
+            get {
+                return ResourceManager.GetString("Bulb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string Button_Cancel {
+            get {
+                return ResourceManager.GetString("Button_Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string Button_Save {
+            get {
+                return ResourceManager.GetString("Button_Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ceramic shard.
+        /// </summary>
+        internal static string CeramicShard {
+            get {
+                return ResourceManager.GetString("CeramicShard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cereal box.
+        /// </summary>
+        internal static string CerealBox {
+            get {
+                return ResourceManager.GetString("CerealBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cigarette butt.
+        /// </summary>
+        internal static string CigaretteButt {
+            get {
+                return ResourceManager.GetString("CigaretteButt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bottle with a deposit mark.
+        /// </summary>
+        internal static string DepositBootle {
+            get {
+                return ResourceManager.GetString("DepositBootle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Can with a deposit mark.
+        /// </summary>
+        internal static string DepositCan {
+            get {
+                return ResourceManager.GetString("DepositCan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deposit glass bottle.
+        /// </summary>
+        internal static string DepositGlass {
+            get {
+                return ResourceManager.GetString("DepositGlass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Egg shells.
+        /// </summary>
+        internal static string EggShells {
+            get {
+                return ResourceManager.GetString("EggShells", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Envelope.
+        /// </summary>
+        internal static string Envelope {
+            get {
+                return ResourceManager.GetString("Envelope", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Film/wrapping.
+        /// </summary>
+        internal static string FilmWrapping {
+            get {
+                return ResourceManager.GetString("FilmWrapping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Test your recycling knowledge ♻️.
+        /// </summary>
+        internal static string Game_Challenge_Message {
+            get {
+                return ResourceManager.GetString("Game_Challenge_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eco Challenge.
+        /// </summary>
+        internal static string Game_Challenge_Title {
+            get {
+                return ResourceManager.GetString("Game_Challenge_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Game.
+        /// </summary>
+        internal static string Game_Title {
+            get {
+                return ResourceManager.GetString("Game_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Glass bottle.
+        /// </summary>
+        internal static string GlassBootle {
+            get {
+                return ResourceManager.GetString("GlassBootle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Glass jar.
+        /// </summary>
+        internal static string GlassCan {
+            get {
+                return ResourceManager.GetString("GlassCan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Glass jar lid.
+        /// </summary>
+        internal static string GlassJarLid {
+            get {
+                return ResourceManager.GetString("GlassJarLid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hello.
         /// </summary>
-        internal static string GreetingText {
+        internal static string Greeting_Text {
             get {
-                return ResourceManager.GetString("GreetingText", resourceCulture);
+                return ResourceManager.GetString("Greeting_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Guide.
+        /// </summary>
+        internal static string Guide_Title {
+            get {
+                return ResourceManager.GetString("Guide_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Juice carton.
+        /// </summary>
+        internal static string JuiceCarton {
+            get {
+                return ResourceManager.GetString("JuiceCarton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose avatar.
+        /// </summary>
+        internal static string Label_ChooseAvatar {
+            get {
+                return ResourceManager.GetString("Label_ChooseAvatar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ecology Level.
+        /// </summary>
+        internal static string Label_EcoLevel {
+            get {
+                return ResourceManager.GetString("Label_EcoLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level.
+        /// </summary>
+        internal static string Label_Lvl {
+            get {
+                return ResourceManager.GetString("Label_Lvl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Player name.
+        /// </summary>
+        internal static string Label_PlayerName {
+            get {
+                return ResourceManager.GetString("Label_PlayerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Statistics.
+        /// </summary>
+        internal static string Label_Statistics {
+            get {
+                return ResourceManager.GetString("Label_Statistics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eco Scout 🐾.
+        /// </summary>
+        internal static string LabelRank_EcoScout {
+            get {
+                return ResourceManager.GetString("LabelRank_EcoScout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Green Hero 💚.
+        /// </summary>
+        internal static string LabelRank_GreenHero {
+            get {
+                return ResourceManager.GetString("LabelRank_GreenHero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Planet Guardian 🌍.
+        /// </summary>
+        internal static string LabelRank_PlanetGuardian {
+            get {
+                return ResourceManager.GetString("LabelRank_PlanetGuardian", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recycler ♻️.
+        /// </summary>
+        internal static string LabelRank_Recycler {
+            get {
+                return ResourceManager.GetString("LabelRank_Recycler", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seedling 🌱.
+        /// </summary>
+        internal static string LabelRank_Seedling {
+            get {
+                return ResourceManager.GetString("LabelRank_Seedling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Correct.
+        /// </summary>
+        internal static string LabelStats_Correct {
+            get {
+                return ResourceManager.GetString("LabelStats_Correct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wrong.
+        /// </summary>
+        internal static string LabelStats_Wrong {
+            get {
+                return ResourceManager.GetString("LabelStats_Wrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level up! 🎉.
+        /// </summary>
+        internal static string LvlUp {
+            get {
+                return ResourceManager.GetString("LvlUp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Magazine.
+        /// </summary>
+        internal static string Magazine {
+            get {
+                return ResourceManager.GetString("Magazine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Medical mask.
+        /// </summary>
+        internal static string MedicalMask {
+            get {
+                return ResourceManager.GetString("MedicalMask", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Metal can.
+        /// </summary>
+        internal static string MetalCan {
+            get {
+                return ResourceManager.GetString("MetalCan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Napkin.
+        /// </summary>
+        internal static string Napkin {
+            get {
+                return ResourceManager.GetString("Napkin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Newspaper.
+        /// </summary>
+        internal static string Newspaper {
+            get {
+                return ResourceManager.GetString("Newspaper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notebook.
+        /// </summary>
+        internal static string Notebook {
+            get {
+                return ResourceManager.GetString("Notebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Old book.
+        /// </summary>
+        internal static string OldBook {
+            get {
+                return ResourceManager.GetString("OldBook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paint can.
+        /// </summary>
+        internal static string PaintCan {
+            get {
+                return ResourceManager.GetString("PaintCan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paper bag.
+        /// </summary>
+        internal static string PaperBag {
+            get {
+                return ResourceManager.GetString("PaperBag", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paper/newspaper.
+        /// </summary>
+        internal static string PaperNewspaper {
+            get {
+                return ResourceManager.GetString("PaperNewspaper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Perfume bottle.
+        /// </summary>
+        internal static string PerfumeBottle {
+            get {
+                return ResourceManager.GetString("PerfumeBottle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plastic bottle.
+        /// </summary>
+        internal static string PlasticBottle {
+            get {
+                return ResourceManager.GetString("PlasticBottle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plastic bottle cap.
+        /// </summary>
+        internal static string PlasticBottleCap {
+            get {
+                return ResourceManager.GetString("PlasticBottleCap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profile.
+        /// </summary>
+        internal static string Profile_Title {
+            get {
+                return ResourceManager.GetString("Profile_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reusable bottle.
+        /// </summary>
+        internal static string ReusableBottle {
+            get {
+                return ResourceManager.GetString("ReusableBottle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reusable cutlery.
+        /// </summary>
+        internal static string ReusableCutlery {
+            get {
+                return ResourceManager.GetString("ReusableCutlery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reusable mug.
+        /// </summary>
+        internal static string ReusableMug {
+            get {
+                return ResourceManager.GetString("ReusableMug", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reusable plate.
+        /// </summary>
+        internal static string ReusablePlate {
+            get {
+                return ResourceManager.GetString("ReusablePlate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Round completed.
+        /// </summary>
+        internal static string RoundOver {
+            get {
+                return ResourceManager.GetString("RoundOver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose theme.
+        /// </summary>
+        internal static string Settings_ChooseTheme {
+            get {
+                return ResourceManager.GetString("Settings_ChooseTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable sound.
+        /// </summary>
+        internal static string Settings_EnableSound {
+            get {
+                return ResourceManager.GetString("Settings_EnableSound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        internal static string Settings_Language {
+            get {
+                return ResourceManager.GetString("Settings_Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        internal static string Settings_Theme {
+            get {
+                return ResourceManager.GetString("Settings_Theme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string Settings_Title {
+            get {
+                return ResourceManager.GetString("Settings_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start.
+        /// </summary>
+        internal static string Start {
+            get {
+                return ResourceManager.GetString("Start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  .
+        /// </summary>
+        internal static string TapStartHint {
+            get {
+                return ResourceManager.GetString("TapStartHint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tea bag.
+        /// </summary>
+        internal static string TeaBag {
+            get {
+                return ResourceManager.GetString("TeaBag", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dark.
+        /// </summary>
+        internal static string Theme_Dark {
+            get {
+                return ResourceManager.GetString("Theme_Dark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Light.
+        /// </summary>
+        internal static string Theme_Light {
+            get {
+                return ResourceManager.GetString("Theme_Light", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mercury thermometer.
+        /// </summary>
+        internal static string Thermometer {
+            get {
+                return ResourceManager.GetString("Thermometer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Metal lid.
+        /// </summary>
+        internal static string TinLid {
+            get {
+                return ResourceManager.GetString("TinLid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toothbrush.
+        /// </summary>
+        internal static string Toothbrush {
+            get {
+                return ResourceManager.GetString("Toothbrush", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vegetable peels.
+        /// </summary>
+        internal static string VegetablePeels {
+            get {
+                return ResourceManager.GetString("VegetablePeels", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This app helps you learn waste sorting.
+        ///Play, choose the right bins, and earn points..
+        /// </summary>
+        internal static string Welcome_Message {
+            get {
+                return ResourceManager.GetString("Welcome_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start.
+        /// </summary>
+        internal static string Welcome_Start {
+            get {
+                return ResourceManager.GetString("Welcome_Start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to SortIt!.
+        /// </summary>
+        internal static string Welcome_Title {
+            get {
+                return ResourceManager.GetString("Welcome_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to XP earned.
+        /// </summary>
+        internal static string XPGet {
+            get {
+                return ResourceManager.GetString("XPGet", resourceCulture);
             }
         }
     }

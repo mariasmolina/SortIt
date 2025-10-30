@@ -117,7 +117,230 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="GreetingText" xml:space="preserve">
+  <data name="Game_Title" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="Greeting_Text" xml:space="preserve">
     <value>Hello</value>
+  </data>
+  <data name="Guide_Title" xml:space="preserve">
+    <value>Guide</value>
+  </data>
+  <data name="LabelStats_Correct" xml:space="preserve">
+    <value>Correct</value>
+  </data>
+  <data name="LabelStats_Wrong" xml:space="preserve">
+    <value>Wrong</value>
+  </data>
+  <data name="Label_EcoLevel" xml:space="preserve">
+    <value>Ecology Level</value>
+  </data>
+  <data name="Label_Lvl" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="LabelRank_Recycler" xml:space="preserve">
+    <value>Recycler ♻️</value>
+  </data>
+  <data name="Label_Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="Profile_Title" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Settings_EnableSound" xml:space="preserve">
+    <value>Enable sound</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="Settings_Title" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="LabelRank_Seedling" xml:space="preserve">
+    <value>Seedling 🌱</value>
+  </data>
+  <data name="LabelRank_EcoScout" xml:space="preserve">
+    <value>Eco Scout 🐾</value>
+  </data>
+  <data name="LabelRank_GreenHero" xml:space="preserve">
+    <value>Green Hero 💚</value>
+  </data>
+  <data name="LabelRank_PlanetGuardian" xml:space="preserve">
+    <value>Planet Guardian 🌍</value>
+  </data>
+  <data name="Label_PlayerName" xml:space="preserve">
+    <value>Player name</value>
+  </data>
+  <data name="Label_ChooseAvatar" xml:space="preserve">
+    <value>Choose avatar</value>
+  </data>
+  <data name="Button_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="XPGet" xml:space="preserve">
+    <value>XP earned</value>
+  </data>
+  <data name="LvlUp" xml:space="preserve">
+    <value>Level up! 🎉</value>
+  </data>
+  <data name="RoundOver" xml:space="preserve">
+    <value>Round completed</value>
+  </data>
+  <data name="DepositBootle" xml:space="preserve">
+    <value>Bottle with a deposit mark</value>
+  </data>
+  <data name="DepositCan" xml:space="preserve">
+    <value>Can with a deposit mark</value>
+  </data>
+  <data name="GlassBootle" xml:space="preserve">
+    <value>Glass bottle</value>
+  </data>
+  <data name="GlassCan" xml:space="preserve">
+    <value>Glass jar</value>
+  </data>
+  <data name="Battery" xml:space="preserve">
+    <value>Battery</value>
+  </data>
+  <data name="Bulb" xml:space="preserve">
+    <value>Light bulb</value>
+  </data>
+  <data name="Box" xml:space="preserve">
+    <value>Cardboard box</value>
+  </data>
+  <data name="Newspaper" xml:space="preserve">
+    <value>Newspaper</value>
+  </data>
+  <data name="FilmWrapping" xml:space="preserve">
+    <value>Film/wrapping</value>
+  </data>
+  <data name="MetalCan" xml:space="preserve">
+    <value>Metal can</value>
+  </data>
+  <data name="ReusableMug" xml:space="preserve">
+    <value>Reusable mug</value>
+  </data>
+  <data name="ReusablePlate" xml:space="preserve">
+    <value>Reusable plate</value>
+  </data>
+  <data name="Napkin" xml:space="preserve">
+    <value>Napkin</value>
+  </data>
+  <data name="MedicalMask" xml:space="preserve">
+    <value>Medical mask</value>
+  </data>
+  <data name="AppleCore" xml:space="preserve">
+    <value>Apple core</value>
+  </data>
+  <data name="BananaPeel" xml:space="preserve">
+    <value>Banana peel</value>
+  </data>
+  <data name="PaperNewspaper" xml:space="preserve">
+    <value>Paper/newspaper</value>
+  </data>
+  <data name="Settings_ChooseTheme" xml:space="preserve">
+    <value>Choose theme</value>
+  </data>
+  <data name="TapStartHint" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="Welcome_Title" xml:space="preserve">
+    <value>Welcome to SortIt!</value>
+  </data>
+  <data name="Welcome_Message" xml:space="preserve">
+    <value>This app helps you learn waste sorting.
+Play, choose the right bins, and earn points.</value>
+  </data>
+  <data name="Welcome_Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="PerfumeBottle" xml:space="preserve">
+    <value>Perfume bottle</value>
+  </data>
+  <data name="GlassJarLid" xml:space="preserve">
+    <value>Glass jar lid</value>
+  </data>
+  <data name="PaintCan" xml:space="preserve">
+    <value>Paint can</value>
+  </data>
+  <data name="Thermometer" xml:space="preserve">
+    <value>Mercury thermometer</value>
+  </data>
+  <data name="DepositGlass" xml:space="preserve">
+    <value>Deposit glass bottle</value>
+  </data>
+  <data name="PlasticBottleCap" xml:space="preserve">
+    <value>Plastic bottle cap</value>
+  </data>
+  <data name="PaperBag" xml:space="preserve">
+    <value>Paper bag</value>
+  </data>
+  <data name="CerealBox" xml:space="preserve">
+    <value>Cereal box</value>
+  </data>
+  <data name="PlasticBottle" xml:space="preserve">
+    <value>Plastic bottle</value>
+  </data>
+  <data name="JuiceCarton" xml:space="preserve">
+    <value>Juice carton</value>
+  </data>
+  <data name="TinLid" xml:space="preserve">
+    <value>Metal lid</value>
+  </data>
+  <data name="ReusableBottle" xml:space="preserve">
+    <value>Reusable bottle</value>
+  </data>
+  <data name="Toothbrush" xml:space="preserve">
+    <value>Toothbrush</value>
+  </data>
+  <data name="CeramicShard" xml:space="preserve">
+    <value>Ceramic shard</value>
+  </data>
+  <data name="CigaretteButt" xml:space="preserve">
+    <value>Cigarette butt</value>
+  </data>
+  <data name="TeaBag" xml:space="preserve">
+    <value>Tea bag</value>
+  </data>
+  <data name="VegetablePeels" xml:space="preserve">
+    <value>Vegetable peels</value>
+  </data>
+  <data name="EggShells" xml:space="preserve">
+    <value>Egg shells</value>
+  </data>
+  <data name="Magazine" xml:space="preserve">
+    <value>Magazine</value>
+  </data>
+  <data name="OldBook" xml:space="preserve">
+    <value>Old book</value>
+  </data>
+  <data name="Notebook" xml:space="preserve">
+    <value>Notebook</value>
+  </data>
+  <data name="Envelope" xml:space="preserve">
+    <value>Envelope</value>
+  </data>
+  <data name="ReusableCutlery" xml:space="preserve">
+    <value>Reusable cutlery</value>
+  </data>
+  <data name="Game_Challenge_Title" xml:space="preserve">
+    <value>Eco Challenge</value>
+  </data>
+  <data name="Game_Challenge_Message" xml:space="preserve">
+    <value>Test your recycling knowledge ♻️</value>
   </data>
 </root>
