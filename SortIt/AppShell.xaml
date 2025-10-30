@@ -3,12 +3,39 @@
     x:Class="SortIt.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:SortIt"
-    Title="SortIt">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    xmlns:views="clr-namespace:SortIt.Views"
+    xmlns:vm="clr-namespace:SortIt.ViewModels"
+    Title="SortIt"
+    Shell.TabBarForegroundColor="#66BB6A"
+    Shell.TabBarTitleColor="#66BB6A">
+    <Shell.BindingContext>
+        <vm:LanguageViewModel />
+    </Shell.BindingContext>
+    <TabBar>
+        <ShellContent
+           x:Name="ProfileTab"
+           Title="{Binding Profile_Title}"
+           Icon="user.png"
+           Route="Profile"
+           ContentTemplate="{DataTemplate views:ProfilePage}" />
+        <ShellContent
+            x:Name="GameTab"
+            Title="{Binding Game_Title}"
+            Icon="game.png"
+            Route="Game"     
+            ContentTemplate="{DataTemplate views:GamePage}" />
+        <ShellContent
+            x:Name="GuideTab"
+            Title="{Binding Guide_Title}"   
+            Icon="guide.png"
+            Route="Guide"   
+            ContentTemplate="{DataTemplate views:GuidePage}" />
+        <ShellContent
+            x:Name="SettingsTab"
+            Title="{Binding Settings_Title}" 
+            Icon="settings.png"
+            Route="Settings" 
+            ContentTemplate="{DataTemplate views:SettingsPage}" />
+    </TabBar>
 
 </Shell>

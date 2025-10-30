@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SortIt.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SortIt.ViewModels"
+    Shell.NavBarIsVisible="False"
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#F3FFF6" Offset="0.0"/>
+            <GradientStop Color="#FFFBD7" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.BindingContext>
+        <vm:LanguageViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+        <Image Source="welcome_image.png"
+               VerticalOptions="Start"
+               HorizontalOptions="Center"
+               WidthRequest="300"/>
+        <Label Text="{Binding Welcome_Title}"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="#2E7D32"
+               HorizontalTextAlignment="Center" />
+
+        <Label Text="{Binding Welcome_Message}"
+               FontSize="16"
+               TextColor="Black"
+               HorizontalTextAlignment="Center" />
+
+        <Button Text="{Binding Welcome_Start}"
+                BackgroundColor="#FBC02D"
+                TextColor="Black"
+                CornerRadius="14"
+                Padding="16,10"
+                Clicked="OnStartClicked" />
+    </VerticalStackLayout>
+</ContentPage>
