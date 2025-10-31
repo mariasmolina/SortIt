@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SortIt.ViewModels"
+             x:Class="SortIt.Views.GuidePage"
+             Title="{Binding Guide_Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:LanguageViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#F3FFF6" Offset="0.0"/>
+            <GradientStop Color="#FFFBD7" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <VerticalStackLayout Padding="20,60" Spacing="20">
+
+        <!-- Карусель слайдов -->
+        <CarouselView x:Name="SlidesCarousel"
+                      ItemsSource="{Binding Slides}"
+                      HeightRequest="350"
+                      PeekAreaInsets="20"
+                      IsBounceEnabled="True"
+                      IndicatorView="Pager"
+                      HorizontalOptions="Fill"
+                      HorizontalScrollBarVisibility="Never">
+
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="Auto,Auto" Padding="8" RowSpacing="8">
+                        <Image Source="{Binding Image}"
+                               HeightRequest="300"
+                               Aspect="AspectFit"
+                               HorizontalOptions="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <!-- Пейджер под каруселью -->
+        <IndicatorView x:Name="Pager"
+                   IndicatorColor="#99A5D6A7"
+                   SelectedIndicatorColor="#2E7D32"
+                   HorizontalOptions="Center" />
+
+        <!-- Список предметов, которые относятся к текущему слайду -->
+        <Border StrokeShape="RoundRectangle 16" BackgroundColor="White" Padding="8" Margin="20,0,20,30">
+            <CollectionView ItemsSource="{Binding CurrentItem.Items, Source={x:Reference SlidesCarousel}}"
+                    SelectionMode="None"
+                    HorizontalOptions="FillAndExpand">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="Auto,*" Padding="6,8">
+                            <Label Text="•" FontSize="18" TextColor="#2E7D32" Margin="0,0,6,0"/>
+                            <!-- показывает текст элемента списка-->
+                            <Label Grid.Column="1" Text="{Binding .}" FontSize="17" TextColor="#2E7D32"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Border>
+
+    </VerticalStackLayout>
+</ContentPage>
