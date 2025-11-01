@@ -46,11 +46,10 @@
 		<MauiIcon Include="Resources\AppIcon\logo.png" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\game_logo.png" Color="#F3FFF6" BaseSize="1000,600"/>
+		<MauiSplashScreen Include="Resources\Splash\splash_img.png" Color="#61916F" BaseSize="200,200" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 		
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -60,15 +59,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Services\IWasteCatalog.cs" />
+	  <Compile Remove="Services\WasteCatalog.cs" />
 	  <Compile Remove="Views\GamePage - Copy.xaml.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Remove="Views\GamePage - Copy.xaml" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiImage Include="Resources\Splash\game_logo.png" />
 	</ItemGroup>
 
 	<ItemGroup>

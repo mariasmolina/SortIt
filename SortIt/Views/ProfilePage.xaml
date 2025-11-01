@@ -18,12 +18,8 @@
         <vm:ProfileViewModel />
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout Padding="15" Spacing="20">
+    <VerticalStackLayout Padding="15" Spacing="30" Margin="0,30,0,0">
 
-        <Image Source="game_logo.png"
-                WidthRequest="200"
-                HorizontalOptions="Center"
-                Aspect="AspectFit"/>
         <!-- Аккаунт -->
         <Frame Padding="16"
                 CornerRadius="20"
@@ -48,6 +44,7 @@
                             HorizontalTextAlignment="Start"
                             VerticalOptions="Center"
                             BackgroundColor="Transparent"
+                            FontAttributes="Bold"
                             Style="{DynamicResource GlobalTitleLabelStyle}"/>
                 </VerticalStackLayout>
 
@@ -111,9 +108,9 @@
                                     Grid.Column="0"
                                     HeightRequest="2"
                                     Margin="0,6,0,0"
-                                    ProgressColor="#8BC34A"
                                     ScaleY="2"
-                                    BackgroundColor="#E6F3E6" />
+                                    BackgroundColor="#E6F3E6"
+                                    Style="{DynamicResource GlobalProgressBarStyle}"/>
 
                     <Label Text="{Binding XpDisplay}"
                             Grid.Column="1"
@@ -174,9 +171,6 @@
                 HeightRequest="200"
                 HorizontalOptions="Center"
                 Aspect="AspectFit">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding ResetStatsCommand}" />
-            </Image.GestureRecognizers>
         </Image>
 
     </VerticalStackLayout>

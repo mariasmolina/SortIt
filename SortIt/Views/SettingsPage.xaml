@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SortIt.ViewModels"
+             x:Class="SortIt.Views.SettingsPage"
+             Title="{Binding Settings_Title}"
+             Background="{DynamicResource PageBackgroundBrush}"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.BindingContext>
+        <vm:LanguageViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0" Spacing="10" Margin="0,30,0,0">
+
+            <Image Source="game_logo.png"
+                   WidthRequest="200"
+                   HorizontalOptions="Center"
+                   Aspect="AspectFit"/>
+            
+            <!-- Language -->
+            <Frame Padding="16"
+                   Margin="15"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   HorizontalOptions="FillAndExpand"
+                   Style="{DynamicResource GlobalFrameStyle}">
+
+                <Grid ColumnDefinitions="*,auto" ColumnSpacing="12" VerticalOptions="Center">
+
+                    <Label Text="{Binding Settings_Language}"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           VerticalOptions="Center"
+                           Style="{DynamicResource GlobalTitleLabelStyle}"/>
+
+                    <HorizontalStackLayout Grid.Column="1"
+                                           Spacing="10"
+                                           HorizontalOptions="End"
+                                           VerticalOptions="Center">
+
+                        <!-- EN -->
+                        <Button Command="{Binding SetEnglishCommand}"
+                                BackgroundColor="Transparent"
+                                Padding="8"
+                                WidthRequest="40" HeightRequest="40"
+                                CornerRadius="20"
+                                BorderWidth="2">
+                            <Button.ImageSource>
+                                <FileImageSource File="flag_en.png" />
+                            </Button.ImageSource>
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button"
+                                             Binding="{Binding SelectedLanguage}"
+                                             Value="en">
+                                    <Setter Property="BorderColor" Value="#2E7D32"/>
+                                    <Setter Property="BackgroundColor" Value="#E9F6EA"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+
+                        <!-- ET -->
+                        <Button Command="{Binding SetEstonianCommand}"
+                                BackgroundColor="Transparent"
+                                Padding="8"
+                                WidthRequest="40" HeightRequest="40"
+                                CornerRadius="20"
+                                BorderWidth="2">
+                            <Button.ImageSource>
+                                <FileImageSource File="flag_et.png" />
+                            </Button.ImageSource>
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button"
+                                             Binding="{Binding SelectedLanguage}"
+                                             Value="et">
+                                    <Setter Property="BorderColor" Value="#2E7D32"/>
+                                    <Setter Property="BackgroundColor" Value="#E9F6EA"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+
+                        <!-- RU -->
+                        <Button Command="{Binding SetRussianCommand}"
+                                BackgroundColor="Transparent"
+                                Padding="8"
+                                WidthRequest="40" HeightRequest="40"
+                                CornerRadius="20"
+                                BorderWidth="2">
+                            <Button.ImageSource>
+                                <FileImageSource File="flag_ru.png" />
+                            </Button.ImageSource>
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button"
+                                             Binding="{Binding SelectedLanguage}"
+                                             Value="ru">
+                                    <Setter Property="BorderColor" Value="#2E7D32"/>
+                                    <Setter Property="BackgroundColor" Value="#E9F6EA"/>
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+
+                    </HorizontalStackLayout>
+                </Grid>
+            </Frame>
+
+            <!-- Theme -->
+            <Frame Padding="16"
+                   Margin="15"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   HorizontalOptions="FillAndExpand"
+                   Style="{DynamicResource GlobalFrameStyle}">
+                <Grid ColumnDefinitions="*,auto" ColumnSpacing="12" VerticalOptions="Center">
+                    <Label Text="{Binding Settings_Theme}"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           VerticalOptions="Center"
+                           Style="{DynamicResource GlobalTitleLabelStyle}"/>
+                    <Picker x:Name="ThemePicker"
+                            Title="{Binding Settings_ChooseTheme}"
+                            Grid.Column="1"
+                            WidthRequest="140"
+                            HorizontalOptions="End"
+                            ItemsSource="{Binding ThemeOptions}" >
+                    </Picker>
+                </Grid>
+            </Frame>
+
+            <!-- Sound -->
+            <Frame Padding="16"
+                   Margin="15"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   HorizontalOptions="FillAndExpand"
+                   Style="{DynamicResource GlobalFrameStyle}">
+                <Grid ColumnDefinitions="*,auto" ColumnSpacing="12" VerticalOptions="Center">
+                    <Label Text="{Binding Settings_EnableSound}"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           VerticalTextAlignment="Center"
+                           Style="{DynamicResource GlobalTitleLabelStyle}"/>
+                    <Switch x:Name="SoundSwitch"
+                            Toggled="OnSoundToggled"
+                            Grid.Column="1"
+                            HorizontalOptions="End"
+                            Style="{DynamicResource GlobalSwitchStyle}" />
+                </Grid>
+            </Frame>
+            
+            <HorizontalStackLayout Spacing="35" Padding="0,10,0,0" HorizontalOptions="Center" Margin="0,20,0,0">
+                <Button
+                    Text="{Binding Reset_Button}"
+                    FontSize="18"
+                    Clicked="ResetStats"
+                    TextColor="White"
+                    CornerRadius="15"
+                    Padding="16"
+                    FontAttributes="Bold"
+                    HorizontalOptions="FillAndExpand">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#388E3C" Offset="1.0" />
+                            <GradientStop Color="#66BB6A" Offset="0.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+                <Button
+                        Text="{Binding Exit_Button}"
+                        FontSize="18"
+                        Clicked="Exit"
+                        BackgroundColor="#FF9800"
+                        TextColor="White"
+                        CornerRadius="15"
+                        Padding="16"
+                        FontAttributes="Bold"
+                        HorizontalOptions="FillAndExpand">
+                        <Button.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="#FB8C00" Offset="1.0" />
+                                <GradientStop Color="#FBC02D" Offset="0.0" />
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -3,18 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:SortIt.ViewModels"
              x:Class="SortIt.Views.GuidePage"
-             Title="{Binding Guide_Title}">
-    
+             Title="{Binding Guide_Title}"
+             Background="{DynamicResource PageBackgroundBrush}">
+
     <ContentPage.BindingContext>
         <vm:LanguageViewModel />
     </ContentPage.BindingContext>
-    
-    <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#F3FFF6" Offset="0.0"/>
-            <GradientStop Color="#FFFBD7" Offset="1.0"/>
-        </LinearGradientBrush>
-    </ContentPage.Background>
 
     <VerticalStackLayout Padding="20,60" Spacing="20">
 
@@ -47,7 +41,7 @@
                    HorizontalOptions="Center" />
 
         <!-- Список предметов, которые относятся к текущему слайду -->
-        <Border StrokeShape="RoundRectangle 16" BackgroundColor="White" Padding="8" Margin="20,0,20,30">
+        <Border StrokeShape="RoundRectangle 16" Padding="8" Margin="20,0,20,30" Style="{DynamicResource GlobalBorderStyle}">
             <CollectionView ItemsSource="{Binding CurrentItem.Items, Source={x:Reference SlidesCarousel}}"
                     SelectionMode="None"
                     HorizontalOptions="FillAndExpand">
@@ -57,9 +51,9 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid ColumnDefinitions="Auto,*" Padding="6,8">
-                            <Label Text="•" FontSize="18" TextColor="#2E7D32" Margin="0,0,6,0"/>
+                            <Label Text="•" FontSize="18" Margin="0,0,6,0" Style="{DynamicResource GlobalTitleLabelStyle}"/>
                             <!-- показывает текст элемента списка-->
-                            <Label Grid.Column="1" Text="{Binding .}" FontSize="17" TextColor="#2E7D32"/>
+                            <Label Grid.Column="1" Text="{Binding .}" FontSize="17" Style="{DynamicResource GlobalTitleLabelStyle}"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
