@@ -343,4 +343,10 @@ Play, choose the right bins, and earn points.</value>
   <data name="Game_Challenge_Message" xml:space="preserve">
     <value>Test your recycling knowledge ♻️</value>
   </data>
+  <data name="Exit_Button" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Reset_Button" xml:space="preserve">
+    <value>Reset profile</value>
+  </data>
 </root>

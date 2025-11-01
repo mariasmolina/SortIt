@@ -344,4 +344,10 @@ Mängi, vali õiged konteinerid ja teeni punkte.</value>
   <data name="Game_Challenge_Message" xml:space="preserve">
     <value>Pane proovile oma taaskasutusteadmised ♻️</value>
   </data>
+  <data name="Exit_Button" xml:space="preserve">
+    <value>Välja</value>
+  </data>
+  <data name="Reset_Button" xml:space="preserve">
+    <value>Lähtesta profiil</value>
+  </data>
 </root>

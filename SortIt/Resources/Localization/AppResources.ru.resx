@@ -344,4 +344,10 @@
   <data name="Game_Challenge_Message" xml:space="preserve">
     <value>Проверь свои знания в переработке ♻️</value>
   </data>
+  <data name="Exit_Button" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Reset_Button" xml:space="preserve">
+    <value>Cбросить профиль</value>
+  </data>
 </root>

@@ -196,6 +196,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        internal static string Exit_Button {
+            get {
+                return ResourceManager.GetString("Exit_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Film/wrapping.
         /// </summary>
         internal static string FilmWrapping {
@@ -525,6 +534,15 @@ namespace SortIt.Resources.Localization {
         internal static string Profile_Title {
             get {
                 return ResourceManager.GetString("Profile_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset profile.
+        /// </summary>
+        internal static string Reset_Button {
+            get {
+                return ResourceManager.GetString("Reset_Button", resourceCulture);
             }
         }
         
