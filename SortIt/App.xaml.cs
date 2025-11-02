@@ -5,6 +5,8 @@ namespace SortIt
 {
     public partial class App : Application
     {
+        public static AudioService Audio { get; } = new AudioService();
+
         public const string DatabaseName = "sortit.db3";
 
         private static UserProfileRepository _userDb;

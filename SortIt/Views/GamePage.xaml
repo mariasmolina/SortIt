@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SortIt.Views.GamePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:SortIt.ViewModels"
+    Title="{Binding Source={StaticResource Lang}, Path=Game_Title}"
+    Background="{DynamicResource PageBackgroundBrush}"
+    Shell.NavBarIsVisible="False"
+    NavigationPage.HasNavigationBar="False"
+    x:Name="GamePageRoot">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vm:LanguageViewModel x:Key="Lang" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout Padding="16" Spacing="17">
+
+        <VerticalStackLayout Spacing="2" HorizontalOptions="Center" Margin="0,10,0,10">
+            <Label 
+                Text="{Binding Source={StaticResource Lang}, Path=Game_Challenge_Title}"
+                FontSize="26"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                Style="{DynamicResource GlobalTitleLabelStyle}"/>
+            <Label 
+                Text="{Binding Source={StaticResource Lang}, Path=Game_Challenge_Message}"
+                FontSize="14"
+                HorizontalTextAlignment="Center"
+                Style="{DynamicResource GlobalTitleLabelStyle}"/>
+        </VerticalStackLayout>
+
+        <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center">
+            <Border Grid.Column="0"
+                    BackgroundColor="#2E7D32"
+                    Padding="10"
+                    StrokeShape="RoundRectangle 16"
+                    Margin="0,0,10,0">
+                <Grid ColumnDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="10">
+                    <Label Text="⏱" FontSize="18" TextColor="White" VerticalOptions="Center"/>
+                    <Label x:Name="TimerLabel"
+                           Text="{Binding TimerText}"
+                           Grid.Column="1"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="Center"/>
+                    <Label Grid.Column="2"
+                           Text="⭐"
+                           FontSize="18"
+                           TextColor="White"
+                           VerticalOptions="Center"/>
+                    <Label x:Name="ScoreLabel"
+                           Text="{Binding ScoreText}"
+                           Grid.Column="3"
+                           FontSize="18"
+                           TextColor="White"
+                           VerticalOptions="Center"/>
+                </Grid>
+            </Border>
+
+            <Button Grid.Column="1"
+                    Text="{Binding Source={StaticResource Lang}, Path=Start}"
+                    Command="{Binding StartCommand}"
+                    FontAttributes="Bold"
+                    BackgroundColor="#FBC02D"
+                    TextColor="Black"
+                    Padding="18,10"
+                    CornerRadius="14"/>
+        </Grid>
+
+        <Grid RowDefinitions="Auto,Auto"
+              ColumnDefinitions="*,*"
+              RowSpacing="16"
+              ColumnSpacing="16">
+
+            <Border x:Name="Bin0Host"
+                    BackgroundColor="#FFFFFFFF"
+                    Padding="12"
+                    StrokeShape="RoundRectangle 20">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Opacity="0.12" Radius="12" Offset="0,4"/>
+                </Border.Shadow>
+
+                <Image x:Name="Bin0"
+                       Source="{Binding Bin0Image}"
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       Aspect="AspectFit"
+                       HorizontalOptions="Center"/>
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TapBin0Command}" />
+                </Border.GestureRecognizers>
+            </Border>
+
+            <Border x:Name="Bin1Host"
+                    Grid.Column="1"
+                    BackgroundColor="#FFFFFFFF"
+                    Padding="12"
+                    StrokeShape="RoundRectangle 20">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Opacity="0.12" Radius="12" Offset="0,4"/>
+                </Border.Shadow>
+
+                <Image x:Name="Bin1"
+                       Source="{Binding Bin1Image}"
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       Aspect="AspectFit"
+                       HorizontalOptions="Center"/>
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TapBin1Command}" />
+                </Border.GestureRecognizers>
+            </Border>
+
+            <Border x:Name="Bin2Host"
+                    Grid.Row="1"
+                    BackgroundColor="#FFFFFFFF"
+                    Padding="12"
+                    StrokeShape="RoundRectangle 20">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Opacity="0.12" Radius="12" Offset="0,4"/>
+                </Border.Shadow>
+
+                <Image x:Name="Bin2"
+                       Source="{Binding Bin2Image}"
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       Aspect="AspectFit"
+                       HorizontalOptions="Center"/>
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TapBin2Command}" />
+                </Border.GestureRecognizers>
+            </Border>
+
+            <Border x:Name="Bin3Host"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="#FFFFFFFF"
+                    Padding="12"
+                    StrokeShape="RoundRectangle 20">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Opacity="0.12" Radius="12" Offset="0,4"/>
+                </Border.Shadow>
+
+                <Image x:Name="Bin3"
+                       Source="{Binding Bin3Image}"
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       Aspect="AspectFit"
+                       HorizontalOptions="Center"/>
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TapBin3Command}" />
+                </Border.GestureRecognizers>
+            </Border>
+
+        </Grid>
+
+        <Border BackgroundColor="#FFFFFFFF"
+                Padding="12"
+                StrokeShape="RoundRectangle 20">
+            <Border.Shadow>
+                <Shadow Brush="Black" Opacity="0.10" Radius="10" Offset="0,3"/>
+            </Border.Shadow>
+
+            <VerticalStackLayout x:Name="TrashBlock" Spacing="6" HorizontalOptions="Center">
+                <Image x:Name="TrashImage"
+                       Source="{Binding TrashImageSource}"
+                       WidthRequest="110"
+                       HeightRequest="110"
+                       Aspect="AspectFit"/>
+
+                <Label x:Name="ItemName"
+                       Text="{Binding ItemName}"
+                       FontSize="14"
+                       TextColor="#2E7D32"
+                       HorizontalTextAlignment="Center"
+                       IsVisible="False"/>
+            </VerticalStackLayout>
+        </Border>
+
+    </VerticalStackLayout>
+</ContentPage>
