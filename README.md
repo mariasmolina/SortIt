@@ -1,6 +1,6 @@
 # 🌿SortIt
 
-## Rakenduse nimi ja eesmärk
+## Eesmärk
 **SortIt** - õppe- ja mängurakendus, mis aitab kasutajal õppida jäätmete sortimist.  
 Rakendus ühendab hariva osa ja lihtsa mängu, kus tuleb määrata, millisesse konteinerisse erinevad jäätmed kuuluvad.  
 Eesmärk on tõsta keskkonnateadlikkust ja muuta õppimine lõbusaks.
