@@ -36,9 +36,11 @@
 
         <Button Text="{Binding Welcome_Start}"
                 BackgroundColor="#FBC02D"
-                TextColor="Black"
+                TextColor="#691A00"
                 CornerRadius="14"
+                FontSize="20"
                 Padding="16,10"
-                Clicked="OnStartClicked" />
+                Clicked="OnStartClicked"
+                FontAttributes="Bold"/>
     </VerticalStackLayout>
 </ContentPage>

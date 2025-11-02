@@ -193,7 +193,7 @@
     <value>Start</value>
   </data>
   <data name="XPGet" xml:space="preserve">
-    <value>Õuna tükk</value>
+    <value>Saadud XP</value>
   </data>
   <data name="LvlUp" xml:space="preserve">
     <value>Tase on tõusnud! 🎉</value>
@@ -349,5 +349,8 @@ Mängi, vali õiged konteinerid ja teeni punkte.</value>
   </data>
   <data name="Reset_Button" xml:space="preserve">
     <value>Lähtesta profiil</value>
+  </data>
+  <data name="TestLevelUpButton" xml:space="preserve">
+    <value>Testi taseme tõus</value>
   </data>
 </root>

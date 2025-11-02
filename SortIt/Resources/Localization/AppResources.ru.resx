@@ -1,353 +1,337 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
+	<!-- 
+		Microsoft ResX Schema
 
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="Game_Title" xml:space="preserve">
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Game_Title" xml:space="preserve">
     <value>Игра</value>
   </data>
-  <data name="Greeting_Text" xml:space="preserve">
+	<data name="Greeting_Text" xml:space="preserve">
     <value>Привет</value>
   </data>
-  <data name="Guide_Title" xml:space="preserve">
+	<data name="Guide_Title" xml:space="preserve">
     <value>Руководство</value>
   </data>
-  <data name="LabelStats_Correct" xml:space="preserve">
+	<data name="LabelStats_Correct" xml:space="preserve">
     <value>Правильно</value>
   </data>
-  <data name="LabelStats_Wrong" xml:space="preserve">
+	<data name="LabelStats_Wrong" xml:space="preserve">
     <value>Неправильно</value>
   </data>
-  <data name="Label_EcoLevel" xml:space="preserve">
+	<data name="Label_EcoLevel" xml:space="preserve">
     <value>Уровень экологии</value>
   </data>
-  <data name="Label_Lvl" xml:space="preserve">
+	<data name="Label_Lvl" xml:space="preserve">
     <value>Уровень</value>
   </data>
-  <data name="LabelRank_Recycler" xml:space="preserve">
+	<data name="LabelRank_Recycler" xml:space="preserve">
     <value>Переработчик ♻️</value>
   </data>
-  <data name="Label_Statistics" xml:space="preserve">
+	<data name="Label_Statistics" xml:space="preserve">
     <value>Статистика</value>
   </data>
-  <data name="Profile_Title" xml:space="preserve">
+	<data name="Profile_Title" xml:space="preserve">
     <value>Профиль</value>
   </data>
-  <data name="Settings_EnableSound" xml:space="preserve">
+	<data name="Settings_EnableSound" xml:space="preserve">
     <value>Включить звук</value>
   </data>
-  <data name="Settings_Language" xml:space="preserve">
+	<data name="Settings_Language" xml:space="preserve">
     <value>Язык</value>
   </data>
-  <data name="Settings_Theme" xml:space="preserve">
+	<data name="Settings_Theme" xml:space="preserve">
     <value>Тема</value>
   </data>
-  <data name="Settings_Title" xml:space="preserve">
+	<data name="Settings_Title" xml:space="preserve">
     <value>Настройки</value>
   </data>
-  <data name="Theme_Dark" xml:space="preserve">
+	<data name="Theme_Dark" xml:space="preserve">
     <value>Тёмная</value>
   </data>
-  <data name="Theme_Light" xml:space="preserve">
+	<data name="Theme_Light" xml:space="preserve">
     <value>Светлая</value>
   </data>
-  <data name="LabelRank_Seedling" xml:space="preserve">
+	<data name="LabelRank_Seedling" xml:space="preserve">
     <value>Саженец 🌱</value>
   </data>
-  <data name="LabelRank_EcoScout" xml:space="preserve">
+	<data name="LabelRank_EcoScout" xml:space="preserve">
     <value>Эко-скаут 🐾</value>
   </data>
-  <data name="LabelRank_GreenHero" xml:space="preserve">
+	<data name="LabelRank_GreenHero" xml:space="preserve">
     <value>Зеленый герой 💚</value>
   </data>
-  <data name="LabelRank_PlanetGuardian" xml:space="preserve">
+	<data name="LabelRank_PlanetGuardian" xml:space="preserve">
     <value>Хранитель планеты 🌍</value>
   </data>
-  <data name="Label_PlayerName" xml:space="preserve">
+	<data name="Label_PlayerName" xml:space="preserve">
     <value>Имя игрока</value>
   </data>
-  <data name="Label_ChooseAvatar" xml:space="preserve">
+	<data name="Label_ChooseAvatar" xml:space="preserve">
     <value>Выбери аватар</value>
   </data>
-  <data name="Button_Save" xml:space="preserve">
+	<data name="Button_Save" xml:space="preserve">
     <value>Сохранить</value>
   </data>
-  <data name="Button_Cancel" xml:space="preserve">
+	<data name="Button_Cancel" xml:space="preserve">
     <value>Отмена</value>
   </data>
-  <data name="Start" xml:space="preserve">
+	<data name="Start" xml:space="preserve">
     <value>Старт</value>
   </data>
-  <data name="XPGet" xml:space="preserve">
+	<data name="XPGet" xml:space="preserve">
     <value>Получено XP</value>
   </data>
-  <data name="LvlUp" xml:space="preserve">
+	<data name="LvlUp" xml:space="preserve">
     <value>Уровень повышен! 🎉</value>
   </data>
-  <data name="RoundOver" xml:space="preserve">
+	<data name="RoundOver" xml:space="preserve">
     <value>Раунд завершён</value>
   </data>
-  <data name="DepositBootle" xml:space="preserve">
+	<data name="DepositBootle" xml:space="preserve">
     <value>Бутылка с меткой залога</value>
   </data>
-  <data name="DepositCan" xml:space="preserve">
+	<data name="DepositCan" xml:space="preserve">
     <value>Банка с меткой залога</value>
   </data>
-  <data name="GlassBootle" xml:space="preserve">
+	<data name="GlassBootle" xml:space="preserve">
     <value>Стеклянная бутылка</value>
   </data>
-  <data name="GlassCan" xml:space="preserve">
+	<data name="GlassCan" xml:space="preserve">
     <value>Стеклянная банка</value>
   </data>
-  <data name="Battery" xml:space="preserve">
+	<data name="Battery" xml:space="preserve">
     <value>Батарейка</value>
   </data>
-  <data name="Bulb" xml:space="preserve">
+	<data name="Bulb" xml:space="preserve">
     <value>Лампочка</value>
   </data>
-  <data name="Box" xml:space="preserve">
+	<data name="Box" xml:space="preserve">
     <value>Картонная коробка</value>
   </data>
-  <data name="Newspaper" xml:space="preserve">
+	<data name="Newspaper" xml:space="preserve">
     <value>Газета</value>
   </data>
-  <data name="FilmWrapping" xml:space="preserve">
+	<data name="FilmWrapping" xml:space="preserve">
     <value>Плёнка/обёртка</value>
   </data>
-  <data name="MetalCan" xml:space="preserve">
+	<data name="MetalCan" xml:space="preserve">
     <value>Металлическая банка</value>
   </data>
-  <data name="ReusableMug" xml:space="preserve">
+	<data name="ReusableMug" xml:space="preserve">
     <value>Многоразовая кружка</value>
   </data>
-  <data name="ReusablePlate" xml:space="preserve">
+	<data name="ReusablePlate" xml:space="preserve">
     <value>Многоразовая тарелка</value>
   </data>
-  <data name="Napkin" xml:space="preserve">
+	<data name="Napkin" xml:space="preserve">
     <value>Салфетка</value>
   </data>
-  <data name="MedicalMask" xml:space="preserve">
+	<data name="MedicalMask" xml:space="preserve">
     <value>Медицинская маска</value>
   </data>
-  <data name="AppleCore" xml:space="preserve">
+	<data name="AppleCore" xml:space="preserve">
     <value>Огрызок яблока</value>
   </data>
-  <data name="BananaPeel" xml:space="preserve">
+	<data name="BananaPeel" xml:space="preserve">
     <value>Банановая кожура</value>
   </data>
-  <data name="PaperNewspaper" xml:space="preserve">
+	<data name="PaperNewspaper" xml:space="preserve">
     <value>Бумага/газета</value>
   </data>
-  <data name="Settings_ChooseTheme" xml:space="preserve">
+	<data name="Settings_ChooseTheme" xml:space="preserve">
     <value>Выбери тему</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TapStartHint" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Welcome_Title" xml:space="preserve">
+	<assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+	<data name="TapStartHint" type="System.Resources.ResXNullRef, System.Windows.Forms">
+		<value />
+	</data>
+	<data name="Welcome_Title" xml:space="preserve">
     <value>Добро пожаловать в SortIt!</value>
   </data>
-  <data name="Welcome_Message" xml:space="preserve">
+	<data name="Welcome_Message" xml:space="preserve">
     <value>Это приложение помогает изучать сортировку отходов. 
 Играй, выбирай правильные контейнеры и получай баллы.</value>
   </data>
-  <data name="Welcome_Start" xml:space="preserve">
+	<data name="Welcome_Start" xml:space="preserve">
     <value>Начать</value>
   </data>
-  <data name="PerfumeBottle" xml:space="preserve">
+	<data name="PerfumeBottle" xml:space="preserve">
     <value>Флакон от духов</value>
   </data>
-  <data name="GlassJarLid" xml:space="preserve">
+	<data name="GlassJarLid" xml:space="preserve">
     <value>Крышка от стеклянной банки</value>
   </data>
-  <data name="PaintCan" xml:space="preserve">
+	<data name="PaintCan" xml:space="preserve">
     <value>Банка из-под краски</value>
   </data>
-  <data name="Thermometer" xml:space="preserve">
+	<data name="Thermometer" xml:space="preserve">
     <value>Ртутный термометр</value>
   </data>
-  <data name="DepositGlass" xml:space="preserve">
+	<data name="DepositGlass" xml:space="preserve">
     <value>Стеклянная бутылка с меткой залога</value>
   </data>
-  <data name="PlasticBottleCap" xml:space="preserve">
+	<data name="PlasticBottleCap" xml:space="preserve">
     <value>Крышка от пластиковой бутылки</value>
   </data>
-  <data name="PaperBag" xml:space="preserve">
+	<data name="PaperBag" xml:space="preserve">
     <value>Бумажный пакет</value>
   </data>
-  <data name="CerealBox" xml:space="preserve">
+	<data name="CerealBox" xml:space="preserve">
     <value>Коробка из-под хлопьев</value>
   </data>
-  <data name="PlasticBottle" xml:space="preserve">
+	<data name="PlasticBottle" xml:space="preserve">
     <value>Пластиковая бутылка</value>
   </data>
-  <data name="JuiceCarton" xml:space="preserve">
+	<data name="JuiceCarton" xml:space="preserve">
     <value>Пакет от сока</value>
   </data>
-  <data name="TinLid" xml:space="preserve">
+	<data name="TinLid" xml:space="preserve">
     <value>Многоразовые столовые приборы</value>
   </data>
-  <data name="ReusableBottle" xml:space="preserve">
+	<data name="ReusableBottle" xml:space="preserve">
     <value>Многоразовая бутылка</value>
   </data>
-  <data name="Toothbrush" xml:space="preserve">
+	<data name="Toothbrush" xml:space="preserve">
     <value>Зубная щётка</value>
   </data>
-  <data name="CeramicShard" xml:space="preserve">
+	<data name="CeramicShard" xml:space="preserve">
     <value>Осколок керамики</value>
   </data>
-  <data name="CigaretteButt" xml:space="preserve">
+	<data name="CigaretteButt" xml:space="preserve">
     <value>Окурок</value>
   </data>
-  <data name="TeaBag" xml:space="preserve">
+	<data name="TeaBag" xml:space="preserve">
     <value>Чайный пакетик</value>
   </data>
-  <data name="VegetablePeels" xml:space="preserve">
+	<data name="VegetablePeels" xml:space="preserve">
     <value>Овощные очистки</value>
   </data>
-  <data name="EggShells" xml:space="preserve">
+	<data name="EggShells" xml:space="preserve">
     <value>Яичная скорлупа</value>
   </data>
-  <data name="Magazine" xml:space="preserve">
+	<data name="Magazine" xml:space="preserve">
     <value>Журнал</value>
   </data>
-  <data name="OldBook" xml:space="preserve">
+	<data name="OldBook" xml:space="preserve">
     <value>Старая книга</value>
   </data>
-  <data name="Notebook" xml:space="preserve">
+	<data name="Notebook" xml:space="preserve">
     <value>Тетрадь</value>
   </data>
-  <data name="Envelope" xml:space="preserve">
+	<data name="Envelope" xml:space="preserve">
     <value>Конверт</value>
   </data>
-  <data name="ReusableCutlery" xml:space="preserve">
+	<data name="ReusableCutlery" xml:space="preserve">
     <value>Многоразовые столовые приборы</value>
   </data>
-  <data name="Game_Challenge_Title" xml:space="preserve">
+	<data name="Game_Challenge_Title" xml:space="preserve">
     <value>Эко-вызов</value>
   </data>
-  <data name="Game_Challenge_Message" xml:space="preserve">
+	<data name="Game_Challenge_Message" xml:space="preserve">
     <value>Проверь свои знания в переработке ♻️</value>
   </data>
-  <data name="Exit_Button" xml:space="preserve">
+	<data name="Exit_Button" xml:space="preserve">
     <value>Выход</value>
   </data>
-  <data name="Reset_Button" xml:space="preserve">
+	<data name="Reset_Button" xml:space="preserve">
     <value>Cбросить профиль</value>
+  </data>
+	<data name="TestLevelUpButton" xml:space="preserve">
+    <value>Тест повышения уровня</value>
   </data>
 </root>

@@ -664,6 +664,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Test Level Up.
+        /// </summary>
+        internal static string TestLevelUpButton {
+            get {
+                return ResourceManager.GetString("TestLevelUpButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dark.
         /// </summary>
         internal static string Theme_Dark {

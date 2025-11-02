@@ -122,8 +122,7 @@
                             Title="{Binding Settings_ChooseTheme}"
                             Grid.Column="1"
                             WidthRequest="140"
-                            HorizontalOptions="End"
-                            ItemsSource="{Binding ThemeOptions}" >
+                            HorizontalOptions="End" >
                     </Picker>
                 </Grid>
             </Frame>
@@ -186,6 +185,18 @@
                     </Button>
             </HorizontalStackLayout>
 
+            <Button Text="{Binding TestLevelUpButton}"
+                    Margin="0,30,0,10"
+                    Clicked="OnTestLevelUpClicked"
+                    FontSize="15"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#CFD8DC"
+                    TextColor="#263238"
+                    CornerRadius="15"
+                    Padding="10"
+                    FontAttributes="Bold">
+            </Button>
+            
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

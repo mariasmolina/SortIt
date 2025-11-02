@@ -88,6 +88,7 @@ namespace SortIt.ViewModels
         public string Game_Challenge_Message => AppResources.Game_Challenge_Message;
         public string Exit_Button => AppResources.Exit_Button;
         public string Reset_Button => AppResources.Reset_Button;
+        public string TestLevelUpButton => AppResources.TestLevelUpButton;
 
         public IEnumerable<string> ThemeOptions => new[] { Theme_Light, Theme_Dark };
 
@@ -191,6 +192,7 @@ namespace SortIt.ViewModels
             OnPropertyChanged(nameof(Game_Challenge_Message));
             OnPropertyChanged(nameof(Exit_Button));
             OnPropertyChanged(nameof(Reset_Button));
+            OnPropertyChanged(nameof(TestLevelUpButton));
         }
 
         protected void OnPropertyChanged([CallerMemberName] string name = null)
