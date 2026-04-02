@@ -13,8 +13,9 @@
         public string TabBarColor { get; set; }
         public string TabBarBackgroundColor { get; set; }
         public string TabBarUnselectedColor { get; set; }
+        public string StatusColor { get; set; }
 
-        public Theme(string name, 
+        public Theme (string name, 
                      string gradientStart, 
                      string  gradientEnd, 
                      Color backgroundColor,
@@ -24,7 +25,8 @@
                      string progressBarColor,
                      string tabBarColor,
                      string tabBarBackgroundColor,
-                     string tabBarUnselectedColor)
+                     string tabBarUnselectedColor,
+                     string statusColor)
         {
             Name = name;
             BackgroundColor = backgroundColor;
@@ -37,6 +39,7 @@
             TabBarColor = tabBarColor;
             TabBarBackgroundColor = tabBarBackgroundColor;
             TabBarUnselectedColor = tabBarUnselectedColor;
+            StatusColor = statusColor;
         }
         public override string ToString() => Name;
 
@@ -52,6 +55,7 @@
             var tabBarC = Color.FromArgb(TabBarColor);
             var tabBarBgC = Color.FromArgb(TabBarBackgroundColor);
             var tabBarUnC = Color.FromArgb(TabBarUnselectedColor);
+            var statusColor = Color.FromArgb(StatusColor);
 
             Application.Current.Resources["PageBackgroundBrush"] = new LinearGradientBrush
             {
@@ -140,6 +144,15 @@
                 Setters =
                 {
                     new Setter { Property = Switch.OnColorProperty, Value = progressC }
+                }
+            };
+
+
+            Application.Current.Resources["GlobalStatusLabelStyle"] = new Style(typeof(Label))
+            {
+                Setters =
+                {
+                    new Setter { Property = Label.TextColorProperty, Value = statusColor }
                 }
             };
         }

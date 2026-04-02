@@ -31,14 +31,14 @@ public partial class SettingsPage : ContentPage
                 "#CFE6D5", "#FFFBD7",
                 Colors.White, "#2E7D32", "#1B5E20",
                 "Titillium", "#8BC34A",
-                "#66BB6A", "#FFFFFF", "#212121"
+                "#66BB6A", "#FFFFFF", "#212121", "#6B7280"
             ),
             new Theme(
                 AppResources.Theme_Dark,
                 "#1E2723", "#71996A",
                 Colors.DarkSeaGreen, "#1E3B16", "#FFFFFF",
                 "Titillium", "#FFAB00",
-                "#66BB6A", "#131A17", "#8F8D8D"
+                "#66BB6A", "#131A17", "#8F8D8D", "#FFFFFF"
             )
         };
 
