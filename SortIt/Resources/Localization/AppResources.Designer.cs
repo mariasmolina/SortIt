@@ -61,6 +61,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Analysis in progress....
+        /// </summary>
+        internal static string AnalysisInProgress {
+            get {
+                return ResourceManager.GetString("AnalysisInProgress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Apple core.
         /// </summary>
         internal static string AppleCore {
@@ -84,6 +93,15 @@ namespace SortIt.Resources.Localization {
         internal static string Battery {
             get {
                 return ResourceManager.GetString("Battery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bio waste container.
+        /// </summary>
+        internal static string BioWasteContainer {
+            get {
+                return ResourceManager.GetString("BioWasteContainer", resourceCulture);
             }
         }
         
@@ -124,6 +142,42 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Camera is not available.
+        /// </summary>
+        internal static string CameraNotAvailable {
+            get {
+                return ResourceManager.GetString("CameraNotAvailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This device cannot take photos.
+        /// </summary>
+        internal static string CameraNotSupportedOnDevice {
+            get {
+                return ResourceManager.GetString("CameraNotSupportedOnDevice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Camera permission was not granted.
+        /// </summary>
+        internal static string CameraPermissionDenied {
+            get {
+                return ResourceManager.GetString("CameraPermissionDenied", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Camera permission is required to take a photo.
+        /// </summary>
+        internal static string CameraPermissionRequired {
+            get {
+                return ResourceManager.GetString("CameraPermissionRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ceramic shard.
         /// </summary>
         internal static string CeramicShard {
@@ -147,6 +201,24 @@ namespace SortIt.Resources.Localization {
         internal static string CigaretteButt {
             get {
                 return ResourceManager.GetString("CigaretteButt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clothes and shoes container.
+        /// </summary>
+        internal static string ClothesShoesContainer {
+            get {
+                return ResourceManager.GetString("ClothesShoesContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Container.
+        /// </summary>
+        internal static string Container {
+            get {
+                return ResourceManager.GetString("Container", resourceCulture);
             }
         }
         
@@ -178,11 +250,65 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Deposit packaging container.
+        /// </summary>
+        internal static string DepositPackagingContainer {
+            get {
+                return ResourceManager.GetString("DepositPackagingContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Detect.
+        /// </summary>
+        internal static string Detect {
+            get {
+                return ResourceManager.GetString("Detect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Detection failed.
+        /// </summary>
+        internal static string DetectionFailed {
+            get {
+                return ResourceManager.GetString("DetectionFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Detection succeeded.
+        /// </summary>
+        internal static string DetectionSucceeded {
+            get {
+                return ResourceManager.GetString("DetectionSucceeded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Detect waste.
+        /// </summary>
+        internal static string DetectWaste {
+            get {
+                return ResourceManager.GetString("DetectWaste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Egg shells.
         /// </summary>
         internal static string EggShells {
             get {
                 return ResourceManager.GetString("EggShells", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Electronics container.
+        /// </summary>
+        internal static string ElectronicsContainer {
+            get {
+                return ResourceManager.GetString("ElectronicsContainer", resourceCulture);
             }
         }
         
@@ -268,6 +394,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Glass packaging container.
+        /// </summary>
+        internal static string GlassPackagingContainer {
+            get {
+                return ResourceManager.GetString("GlassPackagingContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hello.
         /// </summary>
         internal static string Greeting_Text {
@@ -282,6 +417,42 @@ namespace SortIt.Resources.Localization {
         internal static string Guide_Title {
             get {
                 return ResourceManager.GetString("Guide_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hazardous waste container.
+        /// </summary>
+        internal static string HazardousWasteContainer {
+            get {
+                return ResourceManager.GetString("HazardousWasteContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An image is required to start analysis.
+        /// </summary>
+        internal static string ImageRequiredForAnalysis {
+            get {
+                return ResourceManager.GetString("ImageRequiredForAnalysis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image selected.
+        /// </summary>
+        internal static string ImageSelected_ResultText {
+            get {
+                return ResourceManager.GetString("ImageSelected_ResultText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photo added. Tap &quot;Detect waste&quot;.
+        /// </summary>
+        internal static string ImageSelected_StatusText {
+            get {
+                return ResourceManager.GetString("ImageSelected_StatusText", resourceCulture);
             }
         }
         
@@ -439,6 +610,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mixed municipal waste container.
+        /// </summary>
+        internal static string MixedWasteContainer {
+            get {
+                return ResourceManager.GetString("MixedWasteContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Napkin.
         /// </summary>
         internal static string Napkin {
@@ -457,11 +637,47 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 📷 No image.
+        /// </summary>
+        internal static string NoImage {
+            get {
+                return ResourceManager.GetString("NoImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No result.
+        /// </summary>
+        internal static string NoResult {
+            get {
+                return ResourceManager.GetString("NoResult", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Notebook.
         /// </summary>
         internal static string Notebook {
             get {
                 return ResourceManager.GetString("Notebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is not waste.
+        /// </summary>
+        internal static string NotWaste {
+            get {
+                return ResourceManager.GetString("NotWaste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Object not detected.
+        /// </summary>
+        internal static string ObjectNotDetected {
+            get {
+                return ResourceManager.GetString("ObjectNotDetected", resourceCulture);
             }
         }
         
@@ -493,6 +709,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Paper and cardboard container.
+        /// </summary>
+        internal static string PaperCardboardContainer {
+            get {
+                return ResourceManager.GetString("PaperCardboardContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Paper/newspaper.
         /// </summary>
         internal static string PaperNewspaper {
@@ -507,6 +732,15 @@ namespace SortIt.Resources.Localization {
         internal static string PerfumeBottle {
             get {
                 return ResourceManager.GetString("PerfumeBottle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Photo capture was cancelled.
+        /// </summary>
+        internal static string PhotoCaptureCancelled {
+            get {
+                return ResourceManager.GetString("PhotoCaptureCancelled", resourceCulture);
             }
         }
         
@@ -529,6 +763,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Plastic and metal packaging container.
+        /// </summary>
+        internal static string PlasticMetalContainer {
+            get {
+                return ResourceManager.GetString("PlasticMetalContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Profile.
         /// </summary>
         internal static string Profile_Title {
@@ -543,6 +786,15 @@ namespace SortIt.Resources.Localization {
         internal static string Reset_Button {
             get {
                 return ResourceManager.GetString("Reset_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        internal static string Result {
+            get {
+                return ResourceManager.GetString("Result", resourceCulture);
             }
         }
         
@@ -642,6 +894,42 @@ namespace SortIt.Resources.Localization {
         internal static string Start {
             get {
                 return ResourceManager.GetString("Start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take photo.
+        /// </summary>
+        internal static string TakePhoto {
+            get {
+                return ResourceManager.GetString("TakePhoto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take a photo to find the correct container 🌿.
+        /// </summary>
+        internal static string TakePhoto_Message {
+            get {
+                return ResourceManager.GetString("TakePhoto_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take a photo for detection.
+        /// </summary>
+        internal static string TakePhotoAnalysis {
+            get {
+                return ResourceManager.GetString("TakePhotoAnalysis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take a photo first.
+        /// </summary>
+        internal static string TakePhotoFirst {
+            get {
+                return ResourceManager.GetString("TakePhotoFirst", resourceCulture);
             }
         }
         

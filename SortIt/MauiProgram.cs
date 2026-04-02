@@ -22,6 +22,10 @@ namespace SortIt
                     fonts.AddFont("TitilliumWeb-Regular.ttf", "Titillium");
                 });
             builder.Services.AddSingleton<AudioService>();
+            builder.Services.AddSingleton<HttpClient>();
+            builder.Services.AddHttpClient<CloudVisionAPIService>();
+            builder.Services.AddTransient<WasteDetectionViewModel>();
+            builder.Services.AddTransient<WasteDetectionPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();

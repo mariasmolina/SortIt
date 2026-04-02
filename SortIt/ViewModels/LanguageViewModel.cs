@@ -89,6 +89,38 @@ namespace SortIt.ViewModels
         public string Exit_Button => AppResources.Exit_Button;
         public string Reset_Button => AppResources.Reset_Button;
         public string TestLevelUpButton => AppResources.TestLevelUpButton;
+        public string DetectWaste => AppResources.DetectWaste;
+        public string TakePhoto_Message => AppResources.TakePhoto_Message;
+        public string TakePhoto => AppResources.TakePhoto;
+        public string NoImage => AppResources.NoImage;
+        public string Result => AppResources.Result;
+        public string Container => AppResources.Container;
+        public string Detect => AppResources.Detect;
+        public string NoResult => AppResources.NoResult;
+        public string TakePhotoAnalysis => AppResources.TakePhotoAnalysis;
+        public string CameraPermissionDenied => AppResources.CameraPermissionDenied;
+        public string CameraPermissionRequired => AppResources.CameraPermissionRequired;
+        public string CameraNotAvailable => AppResources.CameraNotAvailable;
+        public string CameraNotSupportedOnDevice => AppResources.CameraNotSupportedOnDevice;
+        public string PhotoCaptureCancelled => AppResources.PhotoCaptureCancelled;
+        public string ImageSelected_ResultText => AppResources.ImageSelected_ResultText;
+        public string ImageSelected_StatusText => AppResources.ImageSelected_StatusText;
+        public string TakePhotoFirst => AppResources.TakePhotoFirst;
+        public string AnalysisInProgress => AppResources.AnalysisInProgress;
+        public string DetectionFailed => AppResources.DetectionFailed;
+        public string ObjectNotDetected => AppResources.ObjectNotDetected;
+        public string ImageRequiredForAnalysis => AppResources.ImageRequiredForAnalysis;
+        public string DetectionSucceeded => AppResources.DetectionSucceeded;
+        public string PlasticMetalContainer => AppResources.PlasticMetalContainer;
+        public string GlassPackagingContainer => AppResources.GlassPackagingContainer;
+        public string PaperCardboardContainer => AppResources.PaperCardboardContainer;
+        public string BioWasteContainer => AppResources.BioWasteContainer;
+        public string DepositPackagingContainer => AppResources.DepositPackagingContainer;
+        public string HazardousWasteContainer => AppResources.HazardousWasteContainer;
+        public string ElectronicsContainer => AppResources.ElectronicsContainer;
+        public string ClothesShoesContainer => AppResources.ClothesShoesContainer;
+        public string MixedWasteContainer => AppResources.MixedWasteContainer;
+        public string NotWaste => AppResources.NotWaste;
 
         public IEnumerable<string> ThemeOptions => new[] { Theme_Light, Theme_Dark };
 
@@ -193,6 +225,38 @@ namespace SortIt.ViewModels
             OnPropertyChanged(nameof(Exit_Button));
             OnPropertyChanged(nameof(Reset_Button));
             OnPropertyChanged(nameof(TestLevelUpButton));
+            OnPropertyChanged(nameof(DetectWaste));
+            OnPropertyChanged(nameof(TakePhoto_Message));
+            OnPropertyChanged(nameof(TakePhoto));
+            OnPropertyChanged(nameof(NoImage));
+            OnPropertyChanged(nameof(Result));
+            OnPropertyChanged(nameof(Container));
+            OnPropertyChanged(nameof(Detect));
+            OnPropertyChanged(nameof(NoResult));
+            OnPropertyChanged(nameof(TakePhotoAnalysis));
+            OnPropertyChanged(nameof(CameraPermissionDenied));
+            OnPropertyChanged(nameof(CameraPermissionRequired));
+            OnPropertyChanged(nameof(CameraNotAvailable));
+            OnPropertyChanged(nameof(CameraNotSupportedOnDevice));
+            OnPropertyChanged(nameof(PhotoCaptureCancelled));
+            OnPropertyChanged(nameof(ImageSelected_ResultText));
+            OnPropertyChanged(nameof(ImageSelected_StatusText));
+            OnPropertyChanged(nameof(TakePhotoFirst));
+            OnPropertyChanged(nameof(AnalysisInProgress));
+            OnPropertyChanged(nameof(DetectionFailed));
+            OnPropertyChanged(nameof(ObjectNotDetected));
+            OnPropertyChanged(nameof(ImageRequiredForAnalysis));
+            OnPropertyChanged(nameof(DetectionSucceeded));
+            OnPropertyChanged(nameof(PlasticMetalContainer));
+            OnPropertyChanged(nameof(GlassPackagingContainer));
+            OnPropertyChanged(nameof(PaperCardboardContainer));
+            OnPropertyChanged(nameof(BioWasteContainer));
+            OnPropertyChanged(nameof(DepositPackagingContainer));
+            OnPropertyChanged(nameof(HazardousWasteContainer));
+            OnPropertyChanged(nameof(ElectronicsContainer));
+            OnPropertyChanged(nameof(ClothesShoesContainer));
+            OnPropertyChanged(nameof(MixedWasteContainer));
+            OnPropertyChanged(nameof(NotWaste));
         }
 
         protected void OnPropertyChanged([CallerMemberName] string name = null)

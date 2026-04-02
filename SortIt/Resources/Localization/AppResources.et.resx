@@ -353,4 +353,100 @@ Mängi, vali õiged konteinerid ja teeni punkte.</value>
   <data name="TestLevelUpButton" xml:space="preserve">
     <value>Testi taseme tõus</value>
   </data>
+  <data name="DetectWaste" xml:space="preserve">
+    <value>Tuvasta prügi</value>
+  </data>
+  <data name="TakePhoto_Message" xml:space="preserve">
+    <value>Tee foto ja saa teada õige konteiner 🌿</value>
+  </data>
+  <data name="TakePhoto" xml:space="preserve">
+    <value>Tee foto</value>
+  </data>
+  <data name="NoImage" xml:space="preserve">
+    <value>📷 Pilti ei ole</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Tulemus</value>
+  </data>
+  <data name="Container" xml:space="preserve">
+    <value>Konteiner</value>
+  </data>
+  <data name="Detect" xml:space="preserve">
+    <value>Tuvasta</value>
+  </data>
+  <data name="NoResult" xml:space="preserve">
+    <value>Tulemus puudub</value>
+  </data>
+  <data name="TakePhotoAnalysis" xml:space="preserve">
+    <value>Tee foto tuvastamiseks</value>
+  </data>
+  <data name="CameraPermissionDenied" xml:space="preserve">
+    <value>Kaamera luba ei antud</value>
+  </data>
+  <data name="CameraPermissionRequired" xml:space="preserve">
+    <value>Kaamera luba on vajalik foto tegemiseks</value>
+  </data>
+  <data name="CameraNotAvailable" xml:space="preserve">
+    <value>Kaamera ei ole saadaval</value>
+  </data>
+  <data name="CameraNotSupportedOnDevice" xml:space="preserve">
+    <value>Selles seadmes ei saa fotot teha</value>
+  </data>
+  <data name="PhotoCaptureCancelled" xml:space="preserve">
+    <value>Foto tegemine katkestati</value>
+  </data>
+  <data name="ImageSelected_ResultText" xml:space="preserve">
+    <value>Pilt on valitud</value>
+  </data>
+  <data name="ImageSelected_StatusText" xml:space="preserve">
+    <value>Foto lisatud. Vajuta "Tuvasta prügi"</value>
+  </data>
+  <data name="TakePhotoFirst" xml:space="preserve">
+    <value>Kõigepealt tee pilt</value>
+  </data>
+  <data name="AnalysisInProgress" xml:space="preserve">
+    <value>Analüüs käib...</value>
+  </data>
+  <data name="DetectionFailed" xml:space="preserve">
+    <value>Tuvastamine ebaõnnestus</value>
+  </data>
+  <data name="ObjectNotDetected" xml:space="preserve">
+    <value>Objekti ei tuvastatud</value>
+  </data>
+  <data name="ImageRequiredForAnalysis" xml:space="preserve">
+    <value>Analüüsi alustamiseks on vaja pilti</value>
+  </data>
+  <data name="DetectionSucceeded" xml:space="preserve">
+    <value>Tuvastus õnnestus</value>
+  </data>
+  <data name="PlasticMetalContainer" xml:space="preserve">
+    <value>Plast- ja metallpakendi konteiner</value>
+  </data>
+  <data name="GlassPackagingContainer" xml:space="preserve">
+    <value>Klaaspakendi konteiner</value>
+  </data>
+  <data name="PaperCardboardContainer" xml:space="preserve">
+    <value>Paberi ja kartongi konteiner</value>
+  </data>
+  <data name="BioWasteContainer" xml:space="preserve">
+    <value>Biojäätmete konteiner</value>
+  </data>
+  <data name="DepositPackagingContainer" xml:space="preserve">
+    <value>Pandipakendi konteiner</value>
+  </data>
+  <data name="HazardousWasteContainer" xml:space="preserve">
+    <value>Ohtlike jäätmete konteiner</value>
+  </data>
+  <data name="ElectronicsContainer" xml:space="preserve">
+    <value>Elektroonika konteiner</value>
+  </data>
+  <data name="ClothesShoesContainer" xml:space="preserve">
+    <value>Rõivaste ja jalanõude konteiner</value>
+  </data>
+  <data name="MixedWasteContainer" xml:space="preserve">
+    <value>Segaolmejäätmete konteine</value>
+  </data>
+  <data name="NotWaste" xml:space="preserve">
+    <value>See ei ole prügi</value>
+  </data>
 </root>

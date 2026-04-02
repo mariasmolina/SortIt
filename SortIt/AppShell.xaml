@@ -29,6 +29,12 @@
             Route="Guide"   
             ContentTemplate="{DataTemplate views:GuidePage}" />
         <ShellContent
+            x:Name="WasteDetectTab"
+            Title="{Binding Detect}" 
+            Icon="camera.png"
+            Route="WasteDetection"     
+            ContentTemplate="{DataTemplate views:WasteDetectionPage}" />
+        <ShellContent
             x:Name="SettingsTab"
             Title="{Binding Settings_Title}" 
             Icon="settings.png"

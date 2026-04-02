@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:SortIt.ViewModels"
+             x:Class="SortIt.Views.WasteDetectionPage"
+             Title="{Binding DetectWaste}"
+             Background="{DynamicResource PageBackgroundBrush}"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vm:LanguageViewModel x:Key="Lang" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="18">
+
+            <VerticalStackLayout Spacing="2" HorizontalOptions="Center" Margin="0,10,0,10">
+                <Label Text="{Binding Source={StaticResource Lang}, Path=DetectWaste}"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   Style="{DynamicResource GlobalTitleLabelStyle}"/>
+
+                <Label Text="{Binding Source={StaticResource Lang}, Path=TakePhoto_Message}"
+                       FontSize="14"
+                       HorizontalTextAlignment="Center"
+                       Style="{DynamicResource GlobalTitleLabelStyle}"/>
+            </VerticalStackLayout>
+
+            <Frame BackgroundColor="White"
+                   CornerRadius="20"
+                   Padding="16"
+                   HasShadow="True"
+                   BorderColor="#DCE8D8">
+
+                <VerticalStackLayout Spacing="14">
+
+                    <Button Text="{Binding Source={StaticResource Lang}, Path=TakePhoto}"
+                            Command="{Binding TakePhotoCommand}"
+                            IsEnabled="{Binding IsNotBusy}"
+                            BackgroundColor="#66BB6A"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="12"
+                            HeightRequest="50"/>
+
+                    <Grid HeightRequest="200"
+                          BackgroundColor="#F8FBF7">
+
+                        <Image Source="{Binding ImagePath}"
+                               Aspect="AspectFit" />
+
+                        <Label Text="{Binding Source={StaticResource Lang}, Path=NoImage}"
+                               FontSize="16"
+                               TextColor="#6B7280"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center">
+
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label"
+                                             Binding="{Binding HasImage}"
+                                             Value="True">
+                                    <Setter Property="IsVisible" Value="False"/>
+                                </DataTrigger>
+                            </Label.Triggers>
+
+                        </Label>
+
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="White"
+                   CornerRadius="20"
+                   Padding="16"
+                   HasShadow="True"
+                   BorderColor="#DCE8D8">
+
+                <VerticalStackLayout Spacing="14">
+
+                    <Button Text="{Binding Source={StaticResource Lang}, Path=DetectWaste}"
+                            Command="{Binding DetectWasteCommand}"
+                            IsEnabled="{Binding CanDetect}"
+                            BackgroundColor="#FBC02D"
+                            TextColor="#5D4037"
+                            FontAttributes="Bold"
+                            CornerRadius="12"
+                            HeightRequest="50"/>
+
+                    <Label Text="{Binding StatusText}"
+                           FontSize="14"
+                           TextColor="#6B7280"
+                           HorizontalTextAlignment="Center" />
+
+                    <BoxView HeightRequest="1"
+                             BackgroundColor="#E5E7EB" />
+
+                    <Label Text="{Binding Source={StaticResource Lang}, Path=Result}"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           TextColor="#2E7D32" />
+
+                    <Label Text="{Binding ResultText}"
+                           FontSize="15"
+                           TextColor="Black"
+                           LineBreakMode="WordWrap" />
+
+                    <Label Text="{Binding Source={StaticResource Lang}, Path=Container}"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           TextColor="#2E7D32" />
+
+                    <Label Text="{Binding ContainerText}"
+                           FontSize="15"
+                           TextColor="Black"
+                           LineBreakMode="WordWrap" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
