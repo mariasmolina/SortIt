@@ -121,6 +121,12 @@ namespace SortIt.ViewModels
         public string ClothesShoesContainer => AppResources.ClothesShoesContainer;
         public string MixedWasteContainer => AppResources.MixedWasteContainer;
         public string NotWaste => AppResources.NotWaste;
+        public string Btn_Details => AppResources.Btn_Details;
+        public string CorrectWrong => AppResources.CorrectWrong;
+        public string TotalAnswersText => AppResources.TotalAnswersText;
+        public string AccuracyText => AppResources.AccuracyText;
+        public string WasteTypeStatistics => AppResources.WasteTypeStatistics;
+        public string BackBtn => AppResources.BackBtn;
 
         public IEnumerable<string> ThemeOptions => new[] { Theme_Light, Theme_Dark };
 
@@ -257,6 +263,12 @@ namespace SortIt.ViewModels
             OnPropertyChanged(nameof(ClothesShoesContainer));
             OnPropertyChanged(nameof(MixedWasteContainer));
             OnPropertyChanged(nameof(NotWaste));
+            OnPropertyChanged(nameof(Btn_Details));
+            OnPropertyChanged(nameof(CorrectWrong));
+            OnPropertyChanged(nameof(TotalAnswersText));
+            OnPropertyChanged(nameof(AccuracyText));
+            OnPropertyChanged(nameof(WasteTypeStatistics));
+            OnPropertyChanged(nameof(BackBtn));
         }
 
         protected void OnPropertyChanged([CallerMemberName] string name = null)

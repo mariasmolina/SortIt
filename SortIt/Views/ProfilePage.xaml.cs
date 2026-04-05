@@ -25,5 +25,14 @@ namespace SortIt.Views
         {
             await Navigation.PushModalAsync(new EditProfilePage());
         }
+
+        // Avab detailse statistika lehe
+        private async void OnDetailsClicked(object sender, EventArgs e)
+        {
+            var page = App.Current?.Handler?.MauiContext?.Services?.GetService<StatisticsPage>();
+
+            if (page != null)
+                await Navigation.PushAsync(page);
+        }
     }
 }

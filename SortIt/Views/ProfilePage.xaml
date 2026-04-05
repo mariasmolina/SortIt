@@ -129,10 +129,24 @@
                 Style="{DynamicResource GlobalFrameStyle}">
 
             <VerticalStackLayout Spacing="10">
-                <Label Text="{Binding Source={StaticResource Lang}, Path=Label_Statistics}"
-                        FontSize="18"
-                        FontAttributes="Bold"
-                        Style="{DynamicResource GlobalTitleLabelStyle}" />
+                <Grid ColumnDefinitions="Auto,*,Auto">
+                    <Label Text="{Binding Source={StaticResource Lang}, Path=Label_Statistics}"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           Grid.Column="0"
+                           VerticalOptions="Center"
+                           Style="{DynamicResource GlobalTitleLabelStyle}" />
+                    <Button Text="{Binding Source={StaticResource Lang}, Path=Btn_Details}"
+                            Clicked="OnDetailsClicked"
+                            BackgroundColor="#2E7D32"
+                            TextColor="#FFFFFF"
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            CornerRadius="100"
+                            WidthRequest="80"
+                            Grid.Column="2"
+                            HorizontalOptions="End"/>
+                </Grid>
 
                 <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
 

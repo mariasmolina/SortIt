@@ -364,6 +364,8 @@ namespace SortIt.ViewModels
                 wrong++;
             }
 
+            App.UserDB.UpdateWasteTypeStat(currentItem.Type.ToString(), correctAnswer);
+
             // готовим следующие баки и следующий предмет
             PickBinsForThisTurn();
             PickNextTrashItem();
@@ -389,6 +391,7 @@ namespace SortIt.ViewModels
             // добавляем опыт пользователю
             bool leveled = App.UserDB.AddXp(result.GainedXp);
             App.UserDB.AddGameResult(correct, wrong);
+            App.UserDB.SaveGameSession(correct, wrong, result.GainedXp);
 
             result.LevelUp = leveled;
 
@@ -478,5 +481,6 @@ namespace SortIt.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
+
     }
 }

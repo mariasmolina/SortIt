@@ -61,6 +61,24 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Accuracy.
+        /// </summary>
+        internal static string AccuracyText {
+            get {
+                return ResourceManager.GetString("AccuracyText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All months.
+        /// </summary>
+        internal static string AllMonthsText {
+            get {
+                return ResourceManager.GetString("AllMonthsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Analysis in progress....
         /// </summary>
         internal static string AnalysisInProgress {
@@ -75,6 +93,33 @@ namespace SortIt.Resources.Localization {
         internal static string AppleCore {
             get {
                 return ResourceManager.GetString("AppleCore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to April.
+        /// </summary>
+        internal static string AprilText {
+            get {
+                return ResourceManager.GetString("AprilText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to August.
+        /// </summary>
+        internal static string AugustText {
+            get {
+                return ResourceManager.GetString("AugustText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        internal static string BackBtn {
+            get {
+                return ResourceManager.GetString("BackBtn", resourceCulture);
             }
         }
         
@@ -97,6 +142,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bio.
+        /// </summary>
+        internal static string BioText {
+            get {
+                return ResourceManager.GetString("BioText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bio waste container.
         /// </summary>
         internal static string BioWasteContainer {
@@ -111,6 +165,15 @@ namespace SortIt.Resources.Localization {
         internal static string Box {
             get {
                 return ResourceManager.GetString("Box", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More.
+        /// </summary>
+        internal static string Btn_Details {
+            get {
+                return ResourceManager.GetString("Btn_Details", resourceCulture);
             }
         }
         
@@ -223,6 +286,24 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Correct / Wrong.
+        /// </summary>
+        internal static string CorrectWrong {
+            get {
+                return ResourceManager.GetString("CorrectWrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to December.
+        /// </summary>
+        internal static string DecemberText {
+            get {
+                return ResourceManager.GetString("DecemberText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bottle with a deposit mark.
         /// </summary>
         internal static string DepositBootle {
@@ -255,6 +336,15 @@ namespace SortIt.Resources.Localization {
         internal static string DepositPackagingContainer {
             get {
                 return ResourceManager.GetString("DepositPackagingContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deposit.
+        /// </summary>
+        internal static string DepositText {
+            get {
+                return ResourceManager.GetString("DepositText", resourceCulture);
             }
         }
         
@@ -331,6 +421,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to February.
+        /// </summary>
+        internal static string FebruaryText {
+            get {
+                return ResourceManager.GetString("FebruaryText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Film/wrapping.
         /// </summary>
         internal static string FilmWrapping {
@@ -403,6 +502,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Glass.
+        /// </summary>
+        internal static string GlassText {
+            get {
+                return ResourceManager.GetString("GlassText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hello.
         /// </summary>
         internal static string Greeting_Text {
@@ -417,6 +525,15 @@ namespace SortIt.Resources.Localization {
         internal static string Guide_Title {
             get {
                 return ResourceManager.GetString("Guide_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hazard.
+        /// </summary>
+        internal static string HazardousText {
+            get {
+                return ResourceManager.GetString("HazardousText", resourceCulture);
             }
         }
         
@@ -457,11 +574,38 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to January.
+        /// </summary>
+        internal static string JanuaryText {
+            get {
+                return ResourceManager.GetString("JanuaryText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Juice carton.
         /// </summary>
         internal static string JuiceCarton {
             get {
                 return ResourceManager.GetString("JuiceCarton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to July.
+        /// </summary>
+        internal static string JulyText {
+            get {
+                return ResourceManager.GetString("JulyText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to June.
+        /// </summary>
+        internal static string JuneText {
+            get {
+                return ResourceManager.GetString("JuneText", resourceCulture);
             }
         }
         
@@ -592,6 +736,24 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to March.
+        /// </summary>
+        internal static string MarchText {
+            get {
+                return ResourceManager.GetString("MarchText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to May.
+        /// </summary>
+        internal static string MayText {
+            get {
+                return ResourceManager.GetString("MayText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Medical mask.
         /// </summary>
         internal static string MedicalMask {
@@ -606,6 +768,15 @@ namespace SortIt.Resources.Localization {
         internal static string MetalCan {
             get {
                 return ResourceManager.GetString("MetalCan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mixed.
+        /// </summary>
+        internal static string MixedText {
+            get {
+                return ResourceManager.GetString("MixedText", resourceCulture);
             }
         }
         
@@ -673,11 +844,29 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to November.
+        /// </summary>
+        internal static string NovemberText {
+            get {
+                return ResourceManager.GetString("NovemberText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Object not detected.
         /// </summary>
         internal static string ObjectNotDetected {
             get {
                 return ResourceManager.GetString("ObjectNotDetected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to October.
+        /// </summary>
+        internal static string OctoberText {
+            get {
+                return ResourceManager.GetString("OctoberText", resourceCulture);
             }
         }
         
@@ -727,6 +916,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Paper.
+        /// </summary>
+        internal static string PaperPackagingText {
+            get {
+                return ResourceManager.GetString("PaperPackagingText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Perfume bottle.
         /// </summary>
         internal static string PerfumeBottle {
@@ -772,11 +970,38 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Plast./met..
+        /// </summary>
+        internal static string PMB_CartonText {
+            get {
+                return ResourceManager.GetString("PMB_CartonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Profile.
         /// </summary>
         internal static string Profile_Title {
             get {
                 return ResourceManager.GetString("Profile_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Progress by days.
+        /// </summary>
+        internal static string ProgressDaysTitle {
+            get {
+                return ResourceManager.GetString("ProgressDaysTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Progress by months.
+        /// </summary>
+        internal static string ProgressMonthsTitle {
+            get {
+                return ResourceManager.GetString("ProgressMonthsTitle", resourceCulture);
             }
         }
         
@@ -835,11 +1060,38 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reuse.
+        /// </summary>
+        internal static string ReusableText {
+            get {
+                return ResourceManager.GetString("ReusableText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Round completed.
         /// </summary>
         internal static string RoundOver {
             get {
                 return ResourceManager.GetString("RoundOver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scrap.
+        /// </summary>
+        internal static string ScrapPaperText {
+            get {
+                return ResourceManager.GetString("ScrapPaperText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to September.
+        /// </summary>
+        internal static string SeptemberText {
+            get {
+                return ResourceManager.GetString("SeptemberText", resourceCulture);
             }
         }
         
@@ -1006,11 +1258,29 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total answers.
+        /// </summary>
+        internal static string TotalAnswersText {
+            get {
+                return ResourceManager.GetString("TotalAnswersText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vegetable peels.
         /// </summary>
         internal static string VegetablePeels {
             get {
                 return ResourceManager.GetString("VegetablePeels", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waste type statistics.
+        /// </summary>
+        internal static string WasteTypeStatistics {
+            get {
+                return ResourceManager.GetString("WasteTypeStatistics", resourceCulture);
             }
         }
         

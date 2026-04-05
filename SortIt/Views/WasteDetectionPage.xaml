@@ -89,7 +89,7 @@
                             FontAttributes="Bold"
                             CornerRadius="12"
                             HeightRequest="50"
-                            FontSize="16"/>
+                            FontSize="18"/>
 
                     <Label Text="{Binding StatusText}"
                            FontSize="14"

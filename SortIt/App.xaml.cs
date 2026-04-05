@@ -9,8 +9,8 @@ namespace SortIt
 
         public const string DatabaseName = "sortit.db3";
 
-        private static UserProfileRepository _userDb;
-        public static UserProfileRepository UserDB
+        private static DatabaseService _userDb;
+        public static DatabaseService UserDB
         {
             get
             {
@@ -22,7 +22,7 @@ namespace SortIt
 
                     Directory.CreateDirectory(Path.GetDirectoryName(path)!);
 
-                    _userDb = new UserProfileRepository(path);
+                    _userDb = new DatabaseService(path);
                 }
 
                 return _userDb;

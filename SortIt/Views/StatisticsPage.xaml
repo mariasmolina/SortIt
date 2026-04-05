@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:vm="clr-namespace:SortIt.ViewModels"
+             x:Class="SortIt.Views.StatisticsPage"
+             Title="Statistics"
+             Background="{DynamicResource PageBackgroundBrush}"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vm:LanguageViewModel x:Key="Lang" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="16">
+
+            <Label Text="{Binding Source={StaticResource Lang}, Path=Label_Statistics}"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Style="{DynamicResource GlobalTitleLabelStyle}" />
+
+            <!-- KPI -->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto"
+                  ColumnSpacing="12" RowSpacing="12">
+
+                <Frame Padding="14"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Style="{DynamicResource GlobalFrameStyle}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="{Binding Source={StaticResource Lang}, Path=AccuracyText}" FontSize="14" Opacity="0.8" />
+                        <Label Text="{Binding AccuracyText}" FontSize="24" FontAttributes="Bold" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Column="1"
+                       Padding="14"
+                       CornerRadius="20"
+                       HasShadow="True"
+                       Style="{DynamicResource GlobalFrameStyle}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="{Binding Source={StaticResource Lang}, Path=TotalAnswersText}" FontSize="14" Opacity="0.8" />
+                        <Label Text="{Binding TotalAnswersText}" FontSize="24" FontAttributes="Bold" />
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+
+            <!-- 1. Õiged/Valed vastused -->
+            <Frame Padding="16"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   Style="{DynamicResource GlobalFrameStyle}">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="{Binding Source={StaticResource Lang}, Path=CorrectWrong}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           Style="{DynamicResource GlobalTitleLabelStyle}" />
+
+                    <chart:SfCircularChart HeightRequest="260">
+                        <chart:SfCircularChart.Legend>
+                            <chart:ChartLegend Placement="Bottom" />
+                        </chart:SfCircularChart.Legend>
+
+                        <chart:DoughnutSeries ItemsSource="{Binding OverallPerformanceSeries}"
+                                              XBindingPath="Label"
+                                              YBindingPath="Value"
+                                              ShowDataLabels="True"
+                                              InnerRadius="0.6">
+                                <chart:DoughnutSeries.PaletteBrushes>
+                                    <x:Array Type="{x:Type Brush}">
+                                        <SolidColorBrush Color="#85ad86"/>
+                                        <SolidColorBrush Color="#333333"/>
+                                    </x:Array>
+                                </chart:DoughnutSeries.PaletteBrushes>
+                            <chart:DoughnutSeries.DataLabelSettings>
+                                <chart:CircularDataLabelSettings LabelPosition="Outside" />
+                            </chart:DoughnutSeries.DataLabelSettings>
+                        </chart:DoughnutSeries>
+                    </chart:SfCircularChart>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- 2. Graafik erinevate jäätmeliikide kaupa -->
+            <Frame Padding="16"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   Style="{DynamicResource GlobalFrameStyle}">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="{Binding Source={StaticResource Lang}, Path=WasteTypeStatistics}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           Style="{DynamicResource GlobalTitleLabelStyle}" />
+
+                    <ScrollView Orientation="Horizontal">
+                        <chart:SfCartesianChart HeightRequest="360"
+                                                WidthRequest="650"
+                                                EnableSideBySideSeriesPlacement="True">
+
+                            <chart:SfCartesianChart.Legend>
+                                <chart:ChartLegend Placement="Bottom" />
+                            </chart:SfCartesianChart.Legend>
+
+                            <chart:SfCartesianChart.XAxes>
+                                <chart:CategoryAxis LabelRotation="-25"
+                                                    PlotOffsetStart="10"
+                                                    PlotOffsetEnd="20" />   
+                            </chart:SfCartesianChart.XAxes>
+
+                            <chart:SfCartesianChart.YAxes>
+                                <chart:NumericalAxis Minimum="0"
+                                                     Interval="1" />
+                            </chart:SfCartesianChart.YAxes>
+
+                            <!-- Correct -->
+                            <chart:ColumnSeries ItemsSource="{Binding WasteTypeSeries}"
+                                                XBindingPath="Label"
+                                                YBindingPath="Correct"
+                                                Label="{Binding Source={StaticResource Lang}, Path=LabelStats_Correct}"
+                                                Width="0.6"
+                                                Spacing="0"
+                                                ShowDataLabels="False"
+                                                EnableTooltip="True">
+                                <chart:ColumnSeries.Fill>
+                                    <SolidColorBrush Color="#85ad86"/>
+                                </chart:ColumnSeries.Fill>
+                            </chart:ColumnSeries>
+
+                            <!-- Wrong -->
+                            <chart:ColumnSeries ItemsSource="{Binding WasteTypeSeries}"
+                                                XBindingPath="Label"
+                                                YBindingPath="Wrong"
+                                                Label="{Binding Source={StaticResource Lang}, Path=LabelStats_Wrong}"
+                                                Width="0.6"
+                                                Spacing="0"
+                                                ShowDataLabels="False"
+                                                EnableTooltip="True">
+                                <chart:ColumnSeries.Fill>
+                                    <SolidColorBrush Color="#333333"/>
+                                </chart:ColumnSeries.Fill>
+                            </chart:ColumnSeries>
+
+                        </chart:SfCartesianChart>
+                    </ScrollView>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- 3. Graafik kuvab kasutaja edenemist XP põhjal päevade või kuude kaupa -->
+            <Frame Padding="16"
+                   CornerRadius="22"
+                   HasShadow="True"
+                   Style="{DynamicResource GlobalFrameStyle}">
+                <VerticalStackLayout Spacing="10">
+
+                    <Label Text="{Binding ProgressTitle}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           Style="{DynamicResource GlobalTitleLabelStyle}" />
+
+                    <Grid ColumnDefinitions="*,*"
+                          ColumnSpacing="10">
+
+                        <Picker Title="Select year"
+                                ItemsSource="{Binding Years}"
+                                SelectedItem="{Binding SelectedYear}" />
+
+                        <Picker Grid.Column="1"
+                                Title="Select month"
+                                ItemsSource="{Binding Months}"
+                                SelectedItem="{Binding SelectedMonth}" />
+
+                    </Grid>
+                    
+                    <ScrollView Orientation="Horizontal">
+                        <chart:SfCartesianChart HeightRequest="290">
+
+                            <chart:SfCartesianChart.XAxes>
+                                <chart:CategoryAxis />
+                            </chart:SfCartesianChart.XAxes>
+
+                            <chart:SfCartesianChart.YAxes>
+                                <chart:NumericalAxis Minimum="0"
+                                                     Interval="5" />
+                            </chart:SfCartesianChart.YAxes>
+
+                            <chart:SplineAreaSeries ItemsSource="{Binding DailyXpSeries}"
+                                                    XBindingPath="Label"
+                                                    YBindingPath="Value"
+                                                    Stroke="#85ad86"
+                                                    StrokeWidth="1">
+
+                                <chart:SplineAreaSeries.Fill>
+                                    <LinearGradientBrush StartPoint="0,0"
+                                                         EndPoint="0,1">
+                                        <GradientStop Color="#85ad86" Offset="0"/>
+                                        <GradientStop Color="#85ad86" Offset="0.5"/>
+                                        <GradientStop Color="Transparent" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </chart:SplineAreaSeries.Fill>
+
+                            </chart:SplineAreaSeries>
+
+                        </chart:SfCartesianChart>
+                    </ScrollView>    
+                   
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="{Binding Source={StaticResource Lang}, Path=BackBtn}"
+                    Clicked="BackToProfile"
+                    Margin="0,20,0,0"
+                    BackgroundColor="#CFD8DC"
+                    TextColor="#263238"
+                    FontAttributes="Bold"
+                    CornerRadius="12"
+                    HeightRequest="50"
+                    FontSize="18"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
