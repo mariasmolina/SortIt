@@ -538,4 +538,7 @@ Play, choose the right bins, and earn points.</value>
   <data name="ScrapPaperText" xml:space="preserve">
     <value>Scrap</value>
   </data>
+  <data name="SelectYear" xml:space="preserve">
+    <value>Select year</value>
+  </data>
 </root>

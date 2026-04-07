@@ -539,4 +539,7 @@ Mängi, vali õiged konteinerid ja teeni punkte.</value>
   <data name="PMB_CartonText" xml:space="preserve">
     <value>Plast/met.</value>
   </data>
+  <data name="SelectYear" xml:space="preserve">
+    <value>Vali aasta</value>
+  </data>
 </root>

@@ -1087,6 +1087,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select year.
+        /// </summary>
+        internal static string SelectYear {
+            get {
+                return ResourceManager.GetString("SelectYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to September.
         /// </summary>
         internal static string SeptemberText {

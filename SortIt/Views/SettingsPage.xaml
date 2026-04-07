@@ -157,34 +157,24 @@
                     CornerRadius="15"
                     Padding="16"
                     FontAttributes="Bold"
+                    BackgroundColor="#2E7D32"
                     HorizontalOptions="FillAndExpand">
-                    <Button.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                            <GradientStop Color="#388E3C" Offset="1.0" />
-                            <GradientStop Color="#66BB6A" Offset="0.0" />
-                        </LinearGradientBrush>
-                    </Button.Background>
                 </Button>
 
                 <Button
                         Text="{Binding Exit_Button}"
                         FontSize="18"
                         Clicked="Exit"
-                        BackgroundColor="#FF9800"
-                        TextColor="White"
+                        BackgroundColor="#FBC02D"
+                        TextColor="#5D4037"
                         CornerRadius="15"
                         Padding="16"
                         FontAttributes="Bold"
                         HorizontalOptions="FillAndExpand">
-                        <Button.Background>
-                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                <GradientStop Color="#FB8C00" Offset="1.0" />
-                                <GradientStop Color="#FBC02D" Offset="0.0" />
-                            </LinearGradientBrush>
-                        </Button.Background>
-                    </Button>
+                </Button>
             </HorizontalStackLayout>
-
+            
+            <!--
             <Button Text="{Binding TestLevelUpButton}"
                     Margin="0,30,0,10"
                     Clicked="OnTestLevelUpClicked"
@@ -196,7 +186,8 @@
                     Padding="10"
                     FontAttributes="Bold">
             </Button>
-            
+            -->
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

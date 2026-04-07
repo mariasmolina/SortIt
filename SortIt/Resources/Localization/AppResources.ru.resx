@@ -539,4 +539,7 @@
   <data name="PMB_CartonText" xml:space="preserve">
     <value>Плас./мет.</value>
   </data>
+  <data name="SelectYear" xml:space="preserve">
+    <value>Выбери год</value>
+  </data>
 </root>

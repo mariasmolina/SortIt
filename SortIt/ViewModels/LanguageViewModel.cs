@@ -127,6 +127,7 @@ namespace SortIt.ViewModels
         public string AccuracyText => AppResources.AccuracyText;
         public string WasteTypeStatistics => AppResources.WasteTypeStatistics;
         public string BackBtn => AppResources.BackBtn;
+        public string SelectYear => AppResources.SelectYear;
 
         public IEnumerable<string> ThemeOptions => new[] { Theme_Light, Theme_Dark };
 
@@ -269,6 +270,7 @@ namespace SortIt.ViewModels
             OnPropertyChanged(nameof(AccuracyText));
             OnPropertyChanged(nameof(WasteTypeStatistics));
             OnPropertyChanged(nameof(BackBtn));
+            OnPropertyChanged(nameof(SelectYear));
         }
 
         protected void OnPropertyChanged([CallerMemberName] string name = null)
