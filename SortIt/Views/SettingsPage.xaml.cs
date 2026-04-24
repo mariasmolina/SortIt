@@ -9,40 +9,40 @@ public partial class SettingsPage : ContentPage
 {
     private readonly AudioService _audio = App.Audio;
     private readonly ProfileViewModel vm = new();
+    private Theme _lightTheme;
+    private Theme _darkTheme;
+    private bool _isDarkTheme;
+
     public SettingsPage()
 	{
         InitializeComponent();
 
+        SetupThemes();
+        ApplyTheme(false, false);
+
         SoundSwitch.IsToggled = _audio.IsEnabled;
         SoundSwitch.Toggled += OnSoundToggled;
-
-        ThemePicker.SelectedIndexChanged += ThemePicker_SelectedIndexChanged;
-        SetupThemePicker();
 
         LanguageService.LanguageChanged += OnLanguageChanged;
     }
 
-    private void SetupThemePicker()
+    private void SetupThemes()
     {
-        ThemePicker.ItemsSource = new List<Theme>
-        {
-            new Theme(
-                AppResources.Theme_Light,
-                "#CFE6D5", "#FFFBD7",
-                Colors.White, "#2E7D32", "#1B5E20",
-                "Titillium", "#8BC34A",
-                "#66BB6A", "#FFFFFF", "#212121", "#6B7280"
-            ),
-            new Theme(
-                AppResources.Theme_Dark,
-                "#1E2723", "#71996A",
-                Colors.DarkSeaGreen, "#1E3B16", "#FFFFFF",
-                "Titillium", "#FFAB00",
-                "#66BB6A", "#131A17", "#8F8D8D", "#FFFFFF"
-            )
-        };
+        _lightTheme = new Theme(
+            AppResources.Theme_Light,
+            "#CFE6D5", "#FFFBD7",
+            Colors.White, "#2E7D32", "#1B5E20",
+            "Titillium", "#8BC34A",
+            "#66BB6A", "#FFFFFF", "#212121", "#6B7280"
+        );
 
-        ThemePicker.SelectedIndex = 0;
+        _darkTheme = new Theme(
+            AppResources.Theme_Dark,
+            "#1E2723", "#71996A",
+            Colors.DarkSeaGreen, "#1E3B16", "#FFFFFF",
+            "Titillium", "#FFAB00",
+            "#66BB6A", "#131A17", "#8F8D8D", "#FFFFFF"
+        );
     }
 
 
@@ -51,17 +51,53 @@ public partial class SettingsPage : ContentPage
         _audio.SetEnabled(e.Value);
     }
 
-    private void ThemePicker_SelectedIndexChanged(object sender, EventArgs e)
+    private async void OnThemeToggleTapped(object sender, EventArgs e)
     {
-        if (ThemePicker.SelectedItem is Theme selectedTheme)
+        ApplyTheme(!_isDarkTheme, true);
+    }
+
+    private async void ApplyTheme(bool dark, bool animate)
+    {
+        _isDarkTheme = dark;
+
+        Theme selectedTheme;
+
+        if (dark == true)
         {
-            selectedTheme.Apply(this);
+            selectedTheme = _darkTheme;
+        }
+        else
+        {
+            selectedTheme = _lightTheme;
+        }
+
+        selectedTheme.Apply(this);
+
+        if (dark == true)
+        {
+            Grid.SetColumn(ThemeSelectedBackground, 1);
+
+            LightThemeLabel.TextColor = Color.FromArgb("#333333");
+            DarkThemeLabel.TextColor = Color.FromArgb("#1B5E20");
+        }
+        else
+        {
+            Grid.SetColumn(ThemeSelectedBackground, 0);
+
+            LightThemeLabel.TextColor = Color.FromArgb("#1B5E20");
+            DarkThemeLabel.TextColor = Color.FromArgb("#333333");
+        }
+
+        if (animate == true)
+        {
+            ThemeSelectedBackground.Scale = 0.95;
+            await ThemeSelectedBackground.ScaleTo(1, 120, Easing.CubicOut);
         }
     }
 
     private void OnTestLevelUpClicked(object sender, EventArgs e)
     {
-        App.UserDB.AddXp(300);
+        App.UserDB.AddXp(100);
     }
 
     private void Exit(object sender, EventArgs e)
@@ -79,13 +115,12 @@ public partial class SettingsPage : ContentPage
 
     private void OnLanguageChanged()
     {
-        int oldIndex = ThemePicker.SelectedIndex;
-        SetupThemePicker();
+        SetupThemes();
 
-        if (oldIndex >= 0 && oldIndex < ThemePicker.ItemsSource.Count)
-            ThemePicker.SelectedIndex = oldIndex;
-        else
-            ThemePicker.SelectedIndex = 0;
+        LightThemeLabel.Text = AppResources.Theme_Light;
+        DarkThemeLabel.Text = AppResources.Theme_Dark;
+
+        ApplyTheme(_isDarkTheme, false);
     }
 
     protected override void OnDisappearing()

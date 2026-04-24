@@ -15,7 +15,7 @@ namespace SortIt.Tests
 
             // Assert
             Assert.Equal("Eco Hero", profile.Name);
-            Assert.Equal("avatar_leaf.png", profile.Avatar);
+            Assert.Equal("avatar_leaf.svg", profile.Avatar);
             Assert.Equal(0, profile.Xp);
             Assert.Equal(0, profile.TotalCorrect);
             Assert.Equal(0, profile.TotalWrong);

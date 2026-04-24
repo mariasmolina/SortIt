@@ -73,7 +73,7 @@ namespace SortIt.Tests
             string result = LevelService.GetRankImage(level);
 
             // Assert
-            Assert.Equal("plant_rank0_seedling.png", result);
+            Assert.Equal("plant_rank0_seedling.svg", result);
         }
 
         // Kontrollib, et negatiivse XP korral jääb tase 1

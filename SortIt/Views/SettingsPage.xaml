@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resx="clr-namespace:SortIt.Resources.Constants"
              xmlns:vm="clr-namespace:SortIt.ViewModels"
              x:Class="SortIt.Views.SettingsPage"
              Title="{Binding Settings_Title}"
@@ -15,10 +16,11 @@
     <ScrollView>
         <VerticalStackLayout Padding="0" Spacing="10" Margin="0,30,0,0">
 
-            <Image Source="game_logo.png"
+            <Image Source="{x:Static resx:ImageResources.game_logo}"
                    WidthRequest="200"
                    HorizontalOptions="Center"
-                   Aspect="AspectFit"/>
+                   Aspect="AspectFit"
+                   Margin="0,0,0,30"/>
             
             <!-- Language -->
             <Frame Padding="16"
@@ -49,7 +51,7 @@
                                 CornerRadius="20"
                                 BorderWidth="2">
                             <Button.ImageSource>
-                                <FileImageSource File="flag_en.png" />
+                                <FileImageSource File="{x:Static resx:ImageResources.flag_en}" />
                             </Button.ImageSource>
                             <Button.Triggers>
                                 <DataTrigger TargetType="Button"
@@ -69,7 +71,7 @@
                                 CornerRadius="20"
                                 BorderWidth="2">
                             <Button.ImageSource>
-                                <FileImageSource File="flag_et.png" />
+                                <FileImageSource File="{x:Static resx:ImageResources.flag_et}" />
                             </Button.ImageSource>
                             <Button.Triggers>
                                 <DataTrigger TargetType="Button"
@@ -89,7 +91,7 @@
                                 CornerRadius="20"
                                 BorderWidth="2">
                             <Button.ImageSource>
-                                <FileImageSource File="flag_ru.png" />
+                                <FileImageSource File="{x:Static resx:ImageResources.flag_ru}" />
                             </Button.ImageSource>
                             <Button.Triggers>
                                 <DataTrigger TargetType="Button"
@@ -111,19 +113,65 @@
                    CornerRadius="20"
                    HasShadow="True"
                    HorizontalOptions="FillAndExpand"
-                   Style="{DynamicResource GlobalFrameStyle}">
-                <Grid ColumnDefinitions="*,auto" ColumnSpacing="12" VerticalOptions="Center">
+                   Style="{DynamicResource GlobalFrameStyle}">  
+
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12" VerticalOptions="Center">
+
                     <Label Text="{Binding Settings_Theme}"
                            FontAttributes="Bold"
                            FontSize="18"
                            VerticalOptions="Center"
                            Style="{DynamicResource GlobalTitleLabelStyle}"/>
-                    <Picker x:Name="ThemePicker"
-                            Title="{Binding Settings_ChooseTheme}"
-                            Grid.Column="1"
-                            WidthRequest="140"
-                            HorizontalOptions="End" >
-                    </Picker>
+
+                    <Border Grid.Column="1"
+                            WidthRequest="190"
+                            HeightRequest="46"
+                            Stroke="#D6D6D6"
+                            StrokeThickness="2"
+                            BackgroundColor="White"
+                            StrokeShape="RoundRectangle 23">
+
+                        <Grid ColumnDefinitions="*,*">
+
+                            <Border x:Name="ThemeSelectedBackground"
+                                    Grid.Column="0"
+                                    BackgroundColor="#E7F3D9"
+                                    StrokeThickness="0"
+                                    StrokeShape="RoundRectangle 23"/>
+
+                            <HorizontalStackLayout Grid.Column="0"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="Center"
+                                                   Spacing="6">
+                                <Image Source="{x:Static resx:ImageResources.sun}"
+                                       WidthRequest="22"
+                                       HeightRequest="22"/>
+                                <Label x:Name="LightThemeLabel"
+                                       Text="{Binding Theme_Light}"
+                                       FontSize="14"
+                                       TextColor="#1B5E20"
+                                       VerticalOptions="Center"/>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Grid.Column="1"
+                                                   HorizontalOptions="Center"
+                                                   VerticalOptions="Center"
+                                                   Spacing="6">
+                                <Image Source="{x:Static resx:ImageResources.moon}"
+                                       WidthRequest="22"
+                                       HeightRequest="22"/>
+                                <Label x:Name="DarkThemeLabel"
+                                       Text="{Binding Theme_Dark}"
+                                       FontSize="14"
+                                       TextColor="#333333"
+                                       VerticalOptions="Center"/>
+                            </HorizontalStackLayout>
+
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThemeToggleTapped"/>
+                            </Grid.GestureRecognizers>
+                        </Grid>
+                    </Border>
                 </Grid>
             </Frame>
 
@@ -134,7 +182,7 @@
                    HasShadow="True"
                    HorizontalOptions="FillAndExpand"
                    Style="{DynamicResource GlobalFrameStyle}">
-                <Grid ColumnDefinitions="*,auto" ColumnSpacing="12" VerticalOptions="Center">
+                <Grid ColumnDefinitions="*,auto" ColumnSpacing="10" VerticalOptions="Center">
                     <Label Text="{Binding Settings_EnableSound}"
                            FontAttributes="Bold"
                            FontSize="18"
@@ -144,6 +192,10 @@
                             Toggled="OnSoundToggled"
                             Grid.Column="1"
                             HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            Margin="0,0,15,0"
+                            Scale="1.4"
+                            ThumbColor="#E0E0E0"
                             Style="{DynamicResource GlobalSwitchStyle}" />
                 </Grid>
             </Frame>
@@ -174,7 +226,7 @@
                 </Button>
             </HorizontalStackLayout>
             
-            <!--
+           
             <Button Text="{Binding TestLevelUpButton}"
                     Margin="0,30,0,10"
                     Clicked="OnTestLevelUpClicked"
@@ -186,7 +238,7 @@
                     Padding="10"
                     FontAttributes="Bold">
             </Button>
-            -->
+            
 
         </VerticalStackLayout>
     </ScrollView>

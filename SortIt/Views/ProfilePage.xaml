@@ -182,8 +182,8 @@
 
         <!-- Растение -->
         <Image Source="{Binding PlantImage}"
-                WidthRequest="150"
-                HeightRequest="150"
+                WidthRequest="200"
+                HeightRequest="200"
                 HorizontalOptions="Center"
                 Aspect="AspectFit">
         </Image>
