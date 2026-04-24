@@ -1,8 +1,10 @@
+using SortIt.Resources.Constants;
+
 namespace SortIt.Views
 {
     public partial class EditProfilePage : ContentPage
     {
-        private string _selectedAvatar = "avatar_leaf.png";
+        private string _selectedAvatar = ImageResources.avatar_leaf;
 
         public EditProfilePage()
         {
@@ -40,23 +42,21 @@ namespace SortIt.Views
             A4.StrokeThickness = 0;
 
             // обводка только у выбранного аватара
-            switch (avatarFile)
+            if (avatarFile == ImageResources.avatar_leaf)
             {
-                case "avatar_leaf.png":
-                    A1.StrokeThickness = 3;
-                    break;
-
-                case "avatar_earth.png":
-                    A2.StrokeThickness = 3;
-                    break;
-
-                case "avatar_panda.png":
-                    A3.StrokeThickness = 3;
-                    break;
-
-                case "avatar_drop.png":
-                    A4.StrokeThickness = 3;
-                    break;
+                A1.StrokeThickness = 3;
+            }
+            else if (avatarFile == ImageResources.avatar_earth)
+            {
+                A2.StrokeThickness = 3;
+            }
+            else if (avatarFile == ImageResources.avatar_panda)
+            {
+                A3.StrokeThickness = 3;
+            }
+            else if (avatarFile == ImageResources.avatar_drop)
+            {
+                A4.StrokeThickness = 3;
             }
         }
 

@@ -1,4 +1,6 @@
 ﻿using SortIt.Models;
+using SortIt.Resources.Constants;
+using SortIt.Resources.Localization;
 using SortIt.ViewModels;
 
 namespace SortIt.Services
@@ -16,7 +18,7 @@ namespace SortIt.Services
 
             slides.Add(new Slide
             {
-                Image = "a_klaaspakend.png",
+                Image = AppResources.a_klaaspakend,
                 Title = "Klaaspakend",
                 Items = new List<string> {
                     lang.GlassBootle,
@@ -28,7 +30,7 @@ namespace SortIt.Services
 
             slides.Add(new Slide
             {
-                Image = "b_ohtlikudjaatmed.png",
+                Image = AppResources.b_ohtlikudjaatmed,
                 Title = "Ohtlikud jäätmed",
                 Items = new List<string> {
                     lang.Battery,
@@ -40,7 +42,7 @@ namespace SortIt.Services
 
             slides.Add(new Slide
             {
-                Image = "c_pandipakend.png",
+                Image = AppResources.c_pandipakend,
                 Title = "Pandipakend",
                 Items = new List<string> {
                     lang.DepositBootle,
@@ -52,7 +54,7 @@ namespace SortIt.Services
 
             slides.Add(new Slide
             {
-                Image = "d_pappjapaberpakend.png",
+                Image = AppResources.d_pappjapaberpakend,
                 Title = "Papp ja paberpakend",
                 Items = new List<string> {
                     lang.Box,
@@ -64,7 +66,7 @@ namespace SortIt.Services
 
             slides.Add(new Slide
             {
-                Image = "e_plastmetalljoogikartong.png",
+                Image = AppResources.e_plastmetalljoogikartong,
                 Title = "Plast, metall, joogikartong",
                 Items = new List<string> {
                     lang.FilmWrapping,
@@ -77,7 +79,7 @@ namespace SortIt.Services
 
             slides.Add(new Slide
             {
-                Image = "f_ringlusnoud.png",
+                Image = AppResources.f_ringlusnoud,
                 Title = "Ringlusnõud",
                 Items = new List<string> {
                     lang.ReusableMug,
@@ -89,7 +91,7 @@ namespace SortIt.Services
 
             slides.Add(new Slide
             {
-                Image = "g_segaolmejaatmed.png",
+                Image = AppResources.g_segaolmejaatmed,
                 Title = "Segaolmejäätmed",
                 Items = new List<string> {
                     lang.Napkin,
@@ -102,7 +104,7 @@ namespace SortIt.Services
 
             slides.Add(new Slide
             {
-                Image = "h_biojaatmed.png",
+                Image = AppResources.h_biojaatmed,
                 Title = "Biojäätmed",
                 Items = new List<string> {
                     lang.AppleCore,
@@ -115,7 +117,7 @@ namespace SortIt.Services
 
             slides.Add(new Slide
             {
-                Image = "h_vanapaber.png",
+                Image = AppResources.h_vanapaber,
                 Title = "Vanapaber",
                 Items = new List<string> {
                     lang.PaperNewspaper,

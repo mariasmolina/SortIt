@@ -1,8 +1,9 @@
-﻿using System.ComponentModel;
+﻿using SortIt.Resources.Constants;
+using SortIt.Resources.Localization;
+using SortIt.Services;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
-using SortIt.Services;
-using SortIt.Resources.Localization;
 
 namespace SortIt.ViewModels
 {
@@ -16,7 +17,7 @@ namespace SortIt.ViewModels
             set { _name = value; OnPropertyChanged(); }
         }
 
-        private string _avatar = "avatar_leaf.png";
+        private string _avatar = ImageResources.avatar_leaf;
         public string Avatar
         {
             get => _avatar;
@@ -65,7 +66,7 @@ namespace SortIt.ViewModels
             set { _totalWrong = value; OnPropertyChanged(); }
         }
 
-        private string _plantImage = "plant_rank0_seedling.png";
+        private string _plantImage = ImageResources.plant_rank0_seedling;
         public string PlantImage
         {
             get => _plantImage;

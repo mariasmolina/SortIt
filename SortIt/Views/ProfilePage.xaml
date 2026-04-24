@@ -1,6 +1,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:SortIt.ViewModels"
+             xmlns:resx="clr-namespace:SortIt.Resources.Constants"  
              x:Class="SortIt.Views.ProfilePage"
              Background="{DynamicResource PageBackgroundBrush}"
              Shell.NavBarIsVisible="False"
@@ -61,7 +62,7 @@
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnEditProfile" />
                     </Frame.GestureRecognizers>
-                    <Image Source="pencil.png"
+                    <Image Source="{x:Static resx:ImageResources.pencil}"
                             Aspect="AspectFit"
                             WidthRequest="15"
                             HeightRequest="15"/>
@@ -181,8 +182,8 @@
 
         <!-- Растение -->
         <Image Source="{Binding PlantImage}"
-                WidthRequest="200"
-                HeightRequest="200"
+                WidthRequest="150"
+                HeightRequest="150"
                 HorizontalOptions="Center"
                 Aspect="AspectFit">
         </Image>

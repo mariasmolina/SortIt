@@ -515,11 +515,17 @@ Mängi, vali õiged konteinerid ja teeni punkte.</value>
   <data name="GlassText" xml:space="preserve">
     <value>Klaas</value>
   </data>
+  <data name="HazardousText" xml:space="preserve">
+    <value>Ohtlik</value>
+  </data>
   <data name="DepositText" xml:space="preserve">
     <value>Pandip.</value>
   </data>
   <data name="PaperPackagingText" xml:space="preserve">
     <value>Paber</value>
+  </data>
+  <data name="PMB_CartonText" xml:space="preserve">
+    <value>Plast/met.</value>
   </data>
   <data name="ReusableText" xml:space="preserve">
     <value>Korduv</value>
@@ -533,13 +539,34 @@ Mängi, vali õiged konteinerid ja teeni punkte.</value>
   <data name="ScrapPaperText" xml:space="preserve">
     <value>Vanapab.</value>
   </data>
-  <data name="HazardousText" xml:space="preserve">
-    <value>Ohtlik</value>
-  </data>
-  <data name="PMB_CartonText" xml:space="preserve">
-    <value>Plast/met.</value>
-  </data>
   <data name="SelectYear" xml:space="preserve">
     <value>Vali aasta</value>
+  </data>
+  <data name="d_pappjapaberpakend" xml:space="preserve">
+    <value>pappjapaberpakend_ee.svg</value>
+  </data>
+  <data name="a_klaaspakend" xml:space="preserve">
+    <value>klaaspakend_ee.svg</value>
+  </data>
+  <data name="b_ohtlikudjaatmed" xml:space="preserve">
+    <value>ohtlikudjaatmed_ee.svg</value>
+  </data>
+  <data name="c_pandipakend" xml:space="preserve">
+    <value>pandipakend_ee.svg</value>
+  </data>
+  <data name="e_plastmetalljoogikartong" xml:space="preserve">
+    <value>plastmetalljoogikartong_ee.svg</value>
+  </data>
+  <data name="f_ringlusnoud" xml:space="preserve">
+    <value>ringlusnoud_ee.svg</value>
+  </data>
+  <data name="g_segaolmejaatmed" xml:space="preserve">
+    <value>segaolmejaatmed_ee.svg</value>
+  </data>
+  <data name="h_biojaatmed" xml:space="preserve">
+    <value>biojaatmed_ee.svg</value>
+  </data>
+  <data name="h_vanapaber" xml:space="preserve">
+    <value>vanapaber_ee.svg</value>
   </data>
 </root>

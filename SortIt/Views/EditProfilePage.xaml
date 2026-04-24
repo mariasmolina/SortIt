@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:vm="clr-namespace:SortIt.ViewModels"
+    xmlns:resx="clr-namespace:SortIt.Resources.Constants"
     Shell.NavBarIsVisible="False"
     NavigationPage.HasNavigationBar="False"
     Background="{DynamicResource PageBackgroundBrush}">
@@ -20,30 +21,30 @@
         <Label Text="{Binding Label_ChooseAvatar}" FontAttributes="Bold" FontSize="18" Style="{DynamicResource GlobalTitleLabelStyle}"/>
         <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="12">
             <Border x:Name="A1" Grid.Column="0" Stroke="#66BB6A" StrokeThickness="0" StrokeShape="RoundRectangle 12" Padding="6">
-                <Image Source="avatar_leaf.png" Aspect="AspectFit">
+                <Image Source="{x:Static resx:ImageResources.avatar_leaf}" Aspect="AspectFit">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnPickAvatar" CommandParameter="avatar_leaf.png"/>
+                        <TapGestureRecognizer Tapped="OnPickAvatar" CommandParameter="{x:Static resx:ImageResources.avatar_leaf}"/>
                     </Image.GestureRecognizers>
                 </Image>
             </Border>
             <Border x:Name="A2" Grid.Column="1" Stroke="#66BB6A" StrokeThickness="0" StrokeShape="RoundRectangle 12" Padding="6">
-                <Image Source="avatar_earth.png" Aspect="AspectFit">
+                <Image Source="{x:Static resx:ImageResources.avatar_earth}" Aspect="AspectFit">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnPickAvatar" CommandParameter="avatar_earth.png"/>
+                        <TapGestureRecognizer Tapped="OnPickAvatar" CommandParameter="{x:Static resx:ImageResources.avatar_earth}"/>
                     </Image.GestureRecognizers>
                 </Image>
             </Border>
             <Border x:Name="A3" Grid.Column="2" Stroke="#66BB6A" StrokeThickness="0" StrokeShape="RoundRectangle 12" Padding="6">
-                <Image Source="avatar_panda.png" Aspect="AspectFit">
+                <Image Source="{x:Static resx:ImageResources.avatar_panda}" Aspect="AspectFit">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnPickAvatar" CommandParameter="avatar_panda.png"/>
+                        <TapGestureRecognizer Tapped="OnPickAvatar" CommandParameter="{x:Static resx:ImageResources.avatar_panda}"/>
                     </Image.GestureRecognizers>
                 </Image>
             </Border>
             <Border x:Name="A4" Grid.Column="3" Stroke="#66BB6A" StrokeThickness="0" StrokeShape="RoundRectangle 12" Padding="6">
-                <Image Source="avatar_drop.png" Aspect="AspectFit">
+                <Image Source="{x:Static resx:ImageResources.avatar_drop}" Aspect="AspectFit">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnPickAvatar" CommandParameter="avatar_drop.png"/>
+                        <TapGestureRecognizer Tapped="OnPickAvatar" CommandParameter="{x:Static resx:ImageResources.avatar_drop}"/>
                     </Image.GestureRecognizers>
                 </Image>
             </Border>

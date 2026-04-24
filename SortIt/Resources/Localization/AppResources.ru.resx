@@ -124,7 +124,7 @@
     <value>Привет</value>
   </data>
   <data name="Guide_Title" xml:space="preserve">
-    <value>Руководство</value>
+    <value>Гид</value>
   </data>
   <data name="LabelStats_Correct" xml:space="preserve">
     <value>Правильно</value>
@@ -372,7 +372,7 @@
     <value>Контейнер</value>
   </data>
   <data name="Detect" xml:space="preserve">
-    <value>Определить</value>
+    <value>Скан</value>
   </data>
   <data name="NoResult" xml:space="preserve">
     <value>Результат отсутствует</value>
@@ -524,6 +524,9 @@
   <data name="PaperPackagingText" xml:space="preserve">
     <value>Бумага</value>
   </data>
+  <data name="PMB_CartonText" xml:space="preserve">
+    <value>Плас./мет.</value>
+  </data>
   <data name="ReusableText" xml:space="preserve">
     <value>Многор.</value>
   </data>
@@ -536,10 +539,34 @@
   <data name="ScrapPaperText" xml:space="preserve">
     <value>Макул.</value>
   </data>
-  <data name="PMB_CartonText" xml:space="preserve">
-    <value>Плас./мет.</value>
-  </data>
   <data name="SelectYear" xml:space="preserve">
     <value>Выбери год</value>
+  </data>
+  <data name="d_pappjapaberpakend" xml:space="preserve">
+    <value>pappjapaberpakend_ru.svg</value>
+  </data>
+  <data name="a_klaaspakend" xml:space="preserve">
+    <value>klaaspakend_ru.svg</value>
+  </data>
+  <data name="b_ohtlikudjaatmed" xml:space="preserve">
+    <value>ohtlikudjaatmed_ru.svg</value>
+  </data>
+  <data name="c_pandipakend" xml:space="preserve">
+    <value>pandipakend_ru.svg</value>
+  </data>
+  <data name="e_plastmetalljoogikartong" xml:space="preserve">
+    <value>plastmetalljoogikartong_ru.svg</value>
+  </data>
+  <data name="f_ringlusnoud" xml:space="preserve">
+    <value>ringlusnoud_ru.svg</value>
+  </data>
+  <data name="g_segaolmejaatmed" xml:space="preserve">
+    <value>segaolmejaatmed_ru.svg</value>
+  </data>
+  <data name="h_biojaatmed" xml:space="preserve">
+    <value>biojaatmed_ru.svg</value>
+  </data>
+  <data name="h_vanapaber" xml:space="preserve">
+    <value>vanapaber_ru.svg</value>
   </data>
 </root>

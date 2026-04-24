@@ -4,23 +4,27 @@ using SortIt.Resources.Localization;
 using SortIt.Services;
 using System.ComponentModel;
 using System.Windows.Input;
+using SortIt.Resources.Constants;
 
 namespace SortIt.ViewModels
 {
     public class GameViewModel : INotifyPropertyChanged
     {
+        // Вспомогательная функция для получения картинки по ключу
+        static string BinImage(string keyOrFile) => T(keyOrFile);
+
         // Библиотека всех урн и всех видов мусора
         private readonly Dictionary<WasteType, Bin> allBins = new()
         {
-            [WasteType.Glass] = new Bin { Type = WasteType.Glass, Image = "a_klaaspakend.png" },
-            [WasteType.Hazardous] = new Bin { Type = WasteType.Hazardous, Image = "b_ohtlikudjaatmed.png" },
-            [WasteType.Deposit] = new Bin { Type = WasteType.Deposit, Image = "c_pandipakend.png" },
-            [WasteType.PaperPackaging] = new Bin { Type = WasteType.PaperPackaging, Image = "d_pappjapaberpakend.png" },
-            [WasteType.PMB_Carton] = new Bin { Type = WasteType.PMB_Carton, Image = "e_plastmetalljoogikartong.png" },
-            [WasteType.Reusable] = new Bin { Type = WasteType.Reusable, Image = "f_ringlusnoud.png" },
-            [WasteType.Mixed] = new Bin { Type = WasteType.Mixed, Image = "g_segaolmejaatmed.png" },
-            [WasteType.Bio] = new Bin { Type = WasteType.Bio, Image = "h_biojaatmed.png" },
-            [WasteType.ScrapPaper] = new Bin { Type = WasteType.ScrapPaper, Image = "h_vanapaber.png" },
+            [WasteType.Glass] = new Bin { Type = WasteType.Glass, Image = "a_klaaspakend" },
+            [WasteType.Hazardous] = new Bin { Type = WasteType.Hazardous, Image = "b_ohtlikudjaatmed" },
+            [WasteType.Deposit] = new Bin { Type = WasteType.Deposit, Image = "c_pandipakend" },
+            [WasteType.PaperPackaging] = new Bin { Type = WasteType.PaperPackaging, Image = "d_pappjapaberpakend" },
+            [WasteType.PMB_Carton] = new Bin { Type = WasteType.PMB_Carton, Image = "e_plastmetalljoogikartong" },
+            [WasteType.Reusable] = new Bin { Type = WasteType.Reusable, Image = "f_ringlusnoud" },
+            [WasteType.Mixed] = new Bin { Type = WasteType.Mixed, Image = "g_segaolmejaatmed" },
+            [WasteType.Bio] = new Bin { Type = WasteType.Bio, Image = "h_biojaatmed" },
+            [WasteType.ScrapPaper] = new Bin { Type = WasteType.ScrapPaper, Image = "h_vanapaber" },
         };
 
         // Библиотека всех видов мусора, разбитых по типам
@@ -28,55 +32,55 @@ namespace SortIt.ViewModels
         {
             [WasteType.Glass] = new List<SortableItem>
             {
-                new SortableItem("GlassBootle", "a_glass_bottle.png", WasteType.Glass),
-                new SortableItem("GlassCan", "a_glass_jar.png", WasteType.Glass),
+                new SortableItem("GlassBootle", ImageResources.a_glass_bottle, WasteType.Glass),
+                new SortableItem("GlassCan", ImageResources.a_glass_jar, WasteType.Glass),
             },
             [WasteType.Hazardous] = new List<SortableItem>
             {
-                new SortableItem("Battery", "b_battery.png", WasteType.Hazardous),
-                new SortableItem("Bulb", "b_lightbulb.png", WasteType.Hazardous),
+                new SortableItem("Battery", ImageResources.b_battery, WasteType.Hazardous),
+                new SortableItem("Bulb", ImageResources.b_lightbulb, WasteType.Hazardous),
             },
             [WasteType.Deposit] = new List<SortableItem>
             {
-                new SortableItem("DepositBootle", "c_bottle_deposit.png", WasteType.Deposit),
-                new SortableItem("DepositCan", "c_can_deposit.png", WasteType.Deposit),
+                new SortableItem("DepositBootle", ImageResources.c_bottle_deposit, WasteType.Deposit),
+                new SortableItem("DepositCan", ImageResources.c_can_deposit, WasteType.Deposit),
             },
             [WasteType.PaperPackaging] = new List<SortableItem>
             {
-                new SortableItem("Box", "d_box.png", WasteType.PaperPackaging),
-                new SortableItem("Newspaper", "d_newspaper.png", WasteType.PaperPackaging),
+                new SortableItem("Box", ImageResources.d_box, WasteType.PaperPackaging),
+                new SortableItem("Newspaper", ImageResources.d_newspaper, WasteType.PaperPackaging),
             },
             [WasteType.PMB_Carton] = new List<SortableItem>
             {
-                new SortableItem("FilmWrapping", "e_plastic_wrapper.png", WasteType.PMB_Carton),
-                new SortableItem("MetalCan", "e_metal_can.png", WasteType.PMB_Carton),
+                new SortableItem("FilmWrapping", ImageResources.e_plastic_wrapper, WasteType.PMB_Carton),
+                new SortableItem("MetalCan", ImageResources.e_metal_can, WasteType.PMB_Carton),
             },
             [WasteType.Reusable] = new List<SortableItem>
             {
-                new SortableItem("ReusableMug", "f_cup.png", WasteType.Reusable),
-                new SortableItem("ReusablePlate", "f_plate.png", WasteType.Reusable),
+                new SortableItem("ReusableMug", ImageResources.f_cup, WasteType.Reusable),
+                new SortableItem("ReusablePlate", ImageResources.f_plate, WasteType.Reusable),
             },
             [WasteType.Mixed] = new List<SortableItem>
             {
-                new SortableItem("Napkin", "g_tissue.png", WasteType.Mixed),
-                new SortableItem("MedicalMask", "g_mask.png", WasteType.Mixed),
+                new SortableItem("Napkin", ImageResources.g_tissue, WasteType.Mixed),
+                new SortableItem("MedicalMask", ImageResources.g_mask, WasteType.Mixed),
             },
             [WasteType.Bio] = new List<SortableItem>
             {
-                new SortableItem("AppleCore", "h_apple_core.png", WasteType.Bio),
-                new SortableItem("BananaPeel", "h_banana_peel.png", WasteType.Bio),
+                new SortableItem("AppleCore", ImageResources.h_apple_core, WasteType.Bio),
+                new SortableItem("BananaPeel", ImageResources.h_banana_peel, WasteType.Bio),
             },
             [WasteType.ScrapPaper] = new List<SortableItem>
             {
-                new SortableItem("PaperNewspaper", "d_newspaper.png", WasteType.ScrapPaper),
+                new SortableItem("PaperNewspaper", ImageResources.d_newspaper, WasteType.ScrapPaper),
             },
         };
 
         // активные 4 бака на экране
-        private Bin bin0 = new Bin { Image = "idle_bin.png" };
-        private Bin bin1 = new Bin { Image = "idle_bin.png" };
-        private Bin bin2 = new Bin { Image = "idle_bin.png" };
-        private Bin bin3 = new Bin { Image = "idle_bin.png" };
+        private Bin bin0 = new Bin { Image = ImageResources.idle_bin };
+        private Bin bin1 = new Bin { Image = ImageResources.idle_bin };
+        private Bin bin2 = new Bin { Image = ImageResources.idle_bin };
+        private Bin bin3 = new Bin { Image = ImageResources.idle_bin };
 
         // текущий предмет, который нужно отсортировать
         private SortableItem? currentItem;
@@ -117,7 +121,7 @@ namespace SortIt.ViewModels
         }
 
         // картинка мусора в состоянии паузы
-        private string trashImageSource = "trash_question.png";
+        private string trashImageSource = ImageResources.trash_question;
         public string TrashImageSource
         {
             get => trashImageSource;
@@ -125,28 +129,28 @@ namespace SortIt.ViewModels
         }
 
         // картинки 4 баков в состоянии паузы
-        private string bin0Image = "idle_bin.png";
+        private string bin0Image = ImageResources.idle_bin;
         public string Bin0Image
         {
             get => bin0Image;
             set { bin0Image = value; OnPropertyChanged("Bin0Image"); }
         }
 
-        private string bin1Image = "idle_bin.png";
+        private string bin1Image = ImageResources.idle_bin;
         public string Bin1Image
         {
             get => bin1Image;
             set { bin1Image = value; OnPropertyChanged("Bin1Image"); }
         }
 
-        private string bin2Image = "idle_bin.png";
+        private string bin2Image = ImageResources.idle_bin;
         public string Bin2Image
         {
             get => bin2Image;
             set { bin2Image = value; OnPropertyChanged("Bin2Image"); }
         }
 
-        private string bin3Image = "idle_bin.png";
+        private string bin3Image = ImageResources.idle_bin;
         public string Bin3Image
         {
             get => bin3Image;
@@ -411,10 +415,10 @@ namespace SortIt.ViewModels
         private void UpdateScreenFromGame()
         {
             // картинки 4 баков
-            Bin0Image = bin0.Image;
-            Bin1Image = bin1.Image;
-            Bin2Image = bin2.Image;
-            Bin3Image = bin3.Image;
+            Bin0Image = BinImage(bin0.Image);
+            Bin1Image = BinImage(bin1.Image);
+            Bin2Image = BinImage(bin2.Image);
+            Bin3Image = BinImage(bin3.Image);
 
             // какой мусор сейчас в центре
             if (currentItem != null)
@@ -434,12 +438,12 @@ namespace SortIt.ViewModels
             timer?.Stop();
             timer = null;
 
-            Bin0Image = "idle_bin.png";
-            Bin1Image = "idle_bin.png";
-            Bin2Image = "idle_bin.png";
-            Bin3Image = "idle_bin.png";
+            Bin0Image = ImageResources.idle_bin;
+            Bin1Image = ImageResources.idle_bin;
+            Bin2Image = ImageResources.idle_bin;
+            Bin3Image = ImageResources.idle_bin;
 
-            TrashImageSource = "trash_question.png";
+            TrashImageSource = ImageResources.trash_question;
             ItemName = AppResources.TapStartHint;
 
             TimerText = "30";
@@ -471,6 +475,7 @@ namespace SortIt.ViewModels
                 {
                     ItemName = AppResources.TapStartHint;
                 }
+                UpdateScreenFromGame();
             });
         }
 

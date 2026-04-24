@@ -1,4 +1,5 @@
-﻿using SortIt.Resources.Localization;
+﻿using SortIt.Resources.Constants;
+using SortIt.Resources.Localization;
 
 namespace SortIt.Services
 {
@@ -45,18 +46,18 @@ namespace SortIt.Services
         public static string GetRankImage(int level)
         {
             if (level <= 2)
-                return "plant_rank0_seedling.png"; 
+                return ImageResources.plant_rank0_seedling; 
 
             if (level <= 4)
-                return "plant_rank1_sapling.png";
+                return ImageResources.plant_rank1_sapling;
 
             if (level <= 6)
-                return "plant_rank2_bush.png"; 
+                return ImageResources.plant_rank2_bush; 
 
             if (level <= 8)
-                return "plant_rank3_tree.png";
+                return ImageResources.plant_rank3_tree;
 
-            return "plant_rank4_forest.png";  
+            return ImageResources.plant_rank4_forest;
         }
     }
 }

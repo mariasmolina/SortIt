@@ -541,4 +541,31 @@ Play, choose the right bins, and earn points.</value>
   <data name="SelectYear" xml:space="preserve">
     <value>Select year</value>
   </data>
+  <data name="d_pappjapaberpakend" xml:space="preserve">
+    <value>pappjapaberpakend_en.svg</value>
+  </data>
+  <data name="a_klaaspakend" xml:space="preserve">
+    <value>klaaspakend_en.svg</value>
+  </data>
+  <data name="b_ohtlikudjaatmed" xml:space="preserve">
+    <value>ohtlikudjaatmed_en.svg</value>
+  </data>
+  <data name="c_pandipakend" xml:space="preserve">
+    <value>pandipakend_en.svg</value>
+  </data>
+  <data name="e_plastmetalljoogikartong" xml:space="preserve">
+    <value>plastmetalljoogikartong_en.svg</value>
+  </data>
+  <data name="f_ringlusnoud" xml:space="preserve">
+    <value>ringlusnoud_en.svg</value>
+  </data>
+  <data name="g_segaolmejaatmed" xml:space="preserve">
+    <value>segaolmejaatmed_en.svg</value>
+  </data>
+  <data name="h_biojaatmed" xml:space="preserve">
+    <value>biojaatmed_en.svg</value>
+  </data>
+  <data name="h_vanapaber" xml:space="preserve">
+    <value>vanapaber_en.svg</value>
+  </data>
 </root>

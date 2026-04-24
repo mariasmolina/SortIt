@@ -128,6 +128,17 @@ namespace SortIt.ViewModels
         public string WasteTypeStatistics => AppResources.WasteTypeStatistics;
         public string BackBtn => AppResources.BackBtn;
         public string SelectYear => AppResources.SelectYear;
+        public string a_klaaspakend => AppResources.a_klaaspakend;
+
+        public string b_ohtlikudjaatmed => AppResources.b_ohtlikudjaatmed;
+        public string c_pandipakend => AppResources.c_pandipakend;
+        public string d_pappjapaberpakend => AppResources.d_pappjapaberpakend;
+        public string e_plastmetalljoogikartong => AppResources.e_plastmetalljoogikartong;
+        public string f_ringlusnoud => AppResources.f_ringlusnoud;
+        public string g_segaolmejaatmed => AppResources.g_segaolmejaatmed;
+        public string h_biojaatmed => AppResources.h_biojaatmed;
+        public string h_vanapaber => AppResources.h_vanapaber;
+
 
         public IEnumerable<string> ThemeOptions => new[] { Theme_Light, Theme_Dark };
 
@@ -271,6 +282,15 @@ namespace SortIt.ViewModels
             OnPropertyChanged(nameof(WasteTypeStatistics));
             OnPropertyChanged(nameof(BackBtn));
             OnPropertyChanged(nameof(SelectYear));
+            OnPropertyChanged(nameof(a_klaaspakend));
+            OnPropertyChanged(nameof(b_ohtlikudjaatmed));
+            OnPropertyChanged(nameof(c_pandipakend));
+            OnPropertyChanged(nameof(d_pappjapaberpakend));
+            OnPropertyChanged(nameof(e_plastmetalljoogikartong));
+            OnPropertyChanged(nameof(f_ringlusnoud));
+            OnPropertyChanged(nameof(g_segaolmejaatmed));
+            OnPropertyChanged(nameof(h_biojaatmed));
+            OnPropertyChanged(nameof(h_vanapaber));
         }
 
         protected void OnPropertyChanged([CallerMemberName] string name = null)

@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:SortIt.Views"
     xmlns:vm="clr-namespace:SortIt.ViewModels"
+    xmlns:resx="clr-namespace:SortIt.Resources.Constants" 
     Title="SortIt">
     <Shell.BindingContext>
         <vm:LanguageViewModel />
@@ -13,31 +14,31 @@
         <ShellContent
            x:Name="ProfileTab"
            Title="{Binding Profile_Title}"
-           Icon="user.png"
+           Icon="{x:Static resx:ImageResources.user}"
            Route="Profile"
            ContentTemplate="{DataTemplate views:ProfilePage}" />
         <ShellContent
             x:Name="GameTab"
             Title="{Binding Game_Title}"
-            Icon="game.png"
+            Icon="{x:Static resx:ImageResources.game}"
             Route="Game"     
             ContentTemplate="{DataTemplate views:GamePage}" />
         <ShellContent
             x:Name="GuideTab"
             Title="{Binding Guide_Title}"   
-            Icon="guide.png"
+            Icon="{x:Static resx:ImageResources.guide}"
             Route="Guide"   
             ContentTemplate="{DataTemplate views:GuidePage}" />
         <ShellContent
             x:Name="WasteDetectTab"
             Title="{Binding Detect}" 
-            Icon="camera.png"
+            Icon="{x:Static resx:ImageResources.camera}"
             Route="WasteDetection"     
             ContentTemplate="{DataTemplate views:WasteDetectionPage}" />
         <ShellContent
             x:Name="SettingsTab"
             Title="{Binding Settings_Title}" 
-            Icon="settings.png"
+            Icon="{x:Static resx:ImageResources.settings}"
             Route="Settings" 
             ContentTemplate="{DataTemplate views:SettingsPage}" />
     </TabBar>

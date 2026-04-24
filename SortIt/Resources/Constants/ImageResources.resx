@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="avatar_drop" xml:space="preserve">
+    <value>avatar_drop.svg</value>
+  </data>
+  <data name="avatar_earth" xml:space="preserve">
+    <value>avatar_earth.svg</value>
+  </data>
+  <data name="avatar_leaf" xml:space="preserve">
+    <value>avatar_leaf.svg</value>
+  </data>
+  <data name="avatar_panda" xml:space="preserve">
+    <value>avatar_panda.svg</value>
+  </data>
+  <data name="a_glass_bottle" xml:space="preserve">
+    <value>a_glass_bottle.svg</value>
+  </data>
+  <data name="a_glass_jar" xml:space="preserve">
+    <value>a_glass_jar.svg</value>
+  </data>
+  <data name="b_battery" xml:space="preserve">
+    <value>b_battery.svg</value>
+  </data>
+  <data name="b_lightbulb" xml:space="preserve">
+    <value>b_lightbulb.svg</value>
+  </data>
+  <data name="camera" xml:space="preserve">
+    <value>camera.svg</value>
+  </data>
+  <data name="c_bottle_deposit" xml:space="preserve">
+    <value>c_bottle_deposit.svg</value>
+  </data>
+  <data name="c_can_deposit" xml:space="preserve">
+    <value>c_can_deposit.svg</value>
+  </data>
+  <data name="d_box" xml:space="preserve">
+    <value>d_box.svg</value>
+  </data>
+  <data name="d_newspaper" xml:space="preserve">
+    <value>d_newspaper.svg</value>
+  </data>
+  <data name="e_metal_can" xml:space="preserve">
+    <value>e_metal_can.svg</value>
+  </data>
+  <data name="e_plastic_wrapper" xml:space="preserve">
+    <value>e_plastic_wrapper.svg</value>
+  </data>
+  <data name="flag_en" xml:space="preserve">
+    <value>flag_en.svg</value>
+  </data>
+  <data name="flag_et" xml:space="preserve">
+    <value>flag_et.svg</value>
+  </data>
+  <data name="flag_ru" xml:space="preserve">
+    <value>flag_ru.svg</value>
+  </data>
+  <data name="f_cup" xml:space="preserve">
+    <value>f_cup.svg</value>
+  </data>
+  <data name="f_plate" xml:space="preserve">
+    <value>f_plate.svg</value>
+  </data>
+  <data name="game" xml:space="preserve">
+    <value>game.svg</value>
+  </data>
+  <data name="game_logo" xml:space="preserve">
+    <value>game_logo.svg</value>
+  </data>
+  <data name="guide" xml:space="preserve">
+    <value>guide.svg</value>
+  </data>
+  <data name="g_mask" xml:space="preserve">
+    <value>g_mask.svg</value>
+  </data>
+  <data name="g_tissue" xml:space="preserve">
+    <value>g_tissue.svg</value>
+  </data>
+  <data name="h_apple_core" xml:space="preserve">
+    <value>h_apple_core.svg</value>
+  </data>
+  <data name="h_banana_peel" xml:space="preserve">
+    <value>h_banana_peel.svg</value>
+  </data>
+  <data name="idle_bin" xml:space="preserve">
+    <value>idle_bin.svg</value>
+  </data>
+  <data name="moon" xml:space="preserve">
+    <value>moon.svg</value>
+  </data>
+  <data name="pencil" xml:space="preserve">
+    <value>pencil.svg</value>
+  </data>
+  <data name="plant_rank0_seedling" xml:space="preserve">
+    <value>plant_rank0_seedling.svg</value>
+  </data>
+  <data name="plant_rank1_sapling" xml:space="preserve">
+    <value>plant_rank1_sapling.svg</value>
+  </data>
+  <data name="plant_rank2_bush" xml:space="preserve">
+    <value>plant_rank2_bush.svg</value>
+  </data>
+  <data name="plant_rank3_tree" xml:space="preserve">
+    <value>plant_rank3_tree.svg</value>
+  </data>
+  <data name="plant_rank4_forest" xml:space="preserve">
+    <value>plant_rank4_forest.svg</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>settings.svg</value>
+  </data>
+  <data name="sun" xml:space="preserve">
+    <value>sun.svg</value>
+  </data>
+  <data name="trash_question" xml:space="preserve">
+    <value>trash_question.svg</value>
+  </data>
+  <data name="user" xml:space="preserve">
+    <value>user.svg</value>
+  </data>
+  <data name="welcome_image" xml:space="preserve">
+    <value>welcome_image.svg</value>
+  </data>
+</root>

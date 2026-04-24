@@ -61,6 +61,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to klaaspakend_en.svg.
+        /// </summary>
+        internal static string a_klaaspakend {
+            get {
+                return ResourceManager.GetString("a_klaaspakend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Accuracy.
         /// </summary>
         internal static string AccuracyText {
@@ -111,6 +120,15 @@ namespace SortIt.Resources.Localization {
         internal static string AugustText {
             get {
                 return ResourceManager.GetString("AugustText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ohtlikudjaatmed_en.svg.
+        /// </summary>
+        internal static string b_ohtlikudjaatmed {
+            get {
+                return ResourceManager.GetString("b_ohtlikudjaatmed", resourceCulture);
             }
         }
         
@@ -205,6 +223,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to pandipakend_en.svg.
+        /// </summary>
+        internal static string c_pandipakend {
+            get {
+                return ResourceManager.GetString("c_pandipakend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Camera is not available.
         /// </summary>
         internal static string CameraNotAvailable {
@@ -291,6 +318,15 @@ namespace SortIt.Resources.Localization {
         internal static string CorrectWrong {
             get {
                 return ResourceManager.GetString("CorrectWrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to pappjapaberpakend_en.svg.
+        /// </summary>
+        internal static string d_pappjapaberpakend {
+            get {
+                return ResourceManager.GetString("d_pappjapaberpakend", resourceCulture);
             }
         }
         
@@ -385,6 +421,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to plastmetalljoogikartong_en.svg.
+        /// </summary>
+        internal static string e_plastmetalljoogikartong {
+            get {
+                return ResourceManager.GetString("e_plastmetalljoogikartong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Egg shells.
         /// </summary>
         internal static string EggShells {
@@ -421,6 +466,15 @@ namespace SortIt.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ringlusnoud_en.svg.
+        /// </summary>
+        internal static string f_ringlusnoud {
+            get {
+                return ResourceManager.GetString("f_ringlusnoud", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to February.
         /// </summary>
         internal static string FebruaryText {
@@ -435,6 +489,15 @@ namespace SortIt.Resources.Localization {
         internal static string FilmWrapping {
             get {
                 return ResourceManager.GetString("FilmWrapping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to segaolmejaatmed_en.svg.
+        /// </summary>
+        internal static string g_segaolmejaatmed {
+            get {
+                return ResourceManager.GetString("g_segaolmejaatmed", resourceCulture);
             }
         }
         
@@ -525,6 +588,24 @@ namespace SortIt.Resources.Localization {
         internal static string Guide_Title {
             get {
                 return ResourceManager.GetString("Guide_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to biojaatmed_en.svg.
+        /// </summary>
+        internal static string h_biojaatmed {
+            get {
+                return ResourceManager.GetString("h_biojaatmed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to vanapaber_en.svg.
+        /// </summary>
+        internal static string h_vanapaber {
+            get {
+                return ResourceManager.GetString("h_vanapaber", resourceCulture);
             }
         }
         

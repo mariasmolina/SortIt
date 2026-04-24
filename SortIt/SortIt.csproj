@@ -47,10 +47,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\logo.png" />
+		<MauiIcon Include="Resources\AppIcon\logo.svg" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash_img.png" Color="#61916F" BaseSize="200,200" />
+		<MauiSplashScreen Include="Resources\Splash\splash_img.svg" Color="#61916F" BaseSize="200,200" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -67,6 +67,10 @@
 	  <Compile Remove="Services\IWasteCatalog.cs" />
 	  <Compile Remove="Services\WasteCatalog.cs" />
 	  <Compile Remove="Views\GamePage - Copy.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Remove="Resources\Images\AppResources.resx" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -91,9 +95,16 @@
 		<PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="3.119.2" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 		<PackageReference Include="Syncfusion.Maui.Charts" Version="33.1.46" />
+		<PackageReference Include="System.Drawing.Common" Version="10.0.7" />
+		<PackageReference Include="System.Resources.Extensions" Version="10.0.7" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Resources\Constants\ImageResources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>ImageResources.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Localization\AppResources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -105,6 +116,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Update="Resources\Constants\ImageResources.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>ImageResources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
 	  <EmbeddedResource Update="Resources\Localization\AppResources.resx">
 	    <Generator>ResXFileCodeGenerator</Generator>
 	    <LastGenOutput>AppResources.Designer.cs</LastGenOutput>

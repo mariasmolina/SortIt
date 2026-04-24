@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using SortIt.Resources.Constants;
+using SQLite;
 
 namespace SortIt.Models
 {
@@ -7,7 +8,7 @@ namespace SortIt.Models
     {
         [PrimaryKey, AutoIncrement] public int Id { get; set; }
         public string Name { get; set; } = "Eco Hero";
-        public string Avatar { get; set; } = "avatar_leaf.png";
+        public string Avatar { get; set; } = ImageResources.avatar_leaf;
         public int Xp { get; set; } = 0;
         public int TotalCorrect { get; set; } = 0;
         public int TotalWrong { get; set; } = 0;
