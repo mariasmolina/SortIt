@@ -244,10 +244,10 @@
     <value>Meditsiiniline mask</value>
   </data>
   <data name="AppleCore" xml:space="preserve">
-    <value>Banaanikoor</value>
+    <value>Õuna tükk</value>
   </data>
   <data name="BananaPeel" xml:space="preserve">
-    <value>Õuna tükk</value>
+    <value>Bananikoor</value>
   </data>
   <data name="PaperNewspaper" xml:space="preserve">
     <value>Paber/ajaleht</value>

@@ -70,11 +70,9 @@
                                               XBindingPath="Label"
                                               YBindingPath="Value"
                                               ShowDataLabels="True"
-                                              InnerRadius="0.6">
-                                <chart:DoughnutSeries.PaletteBrushes>
-                                    <SolidColorBrush Color="#85ad86"/>
-                                    <SolidColorBrush Color="#333333"/>
-                            </chart:DoughnutSeries.PaletteBrushes>
+                                              Radius="0.75"
+                                              InnerRadius="0.6"
+                                              PaletteBrushes="{Binding OverallPerformanceBrushes}">
                             <chart:DoughnutSeries.DataLabelSettings>
                                 <chart:CircularDataLabelSettings LabelPosition="Outside" />
                             </chart:DoughnutSeries.DataLabelSettings>
@@ -211,8 +209,8 @@
             <Button Text="{Binding Source={StaticResource Lang}, Path=BackBtn}"
                     Clicked="BackToProfile"
                     Margin="0,20,0,0"
-                    BackgroundColor="#CFD8DC"
-                    TextColor="#263238"
+                    BackgroundColor="#8FBC8F"
+                    TextColor="#FFFFFF"
                     FontAttributes="Bold"
                     CornerRadius="12"
                     HeightRequest="50"

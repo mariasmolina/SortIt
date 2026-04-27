@@ -4,6 +4,8 @@ using System.Runtime.CompilerServices;
 using SortIt.Models;
 using SortIt.Models.Statistics;
 using SortIt.Resources.Localization;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
 
 namespace SortIt.ViewModels
 {
@@ -113,6 +115,11 @@ namespace SortIt.ViewModels
         public ObservableCollection<ChartPoint> OverallPerformanceSeries { get; set; } = new();
         public ObservableCollection<WasteTypeChartPoint> WasteTypeSeries { get; set; } = new();
         public ObservableCollection<ChartPoint> DailyXpSeries { get; set; } = new();
+        public List<Brush> OverallPerformanceBrushes { get; set; } = new()
+        {
+            new SolidColorBrush(Color.FromArgb("#85AD86")),
+            new SolidColorBrush(Color.FromArgb("#333333"))
+        };
 
         // Konstruktor, mis laadib kõik vajalikud andmed vaate jaoks
         public void Load()

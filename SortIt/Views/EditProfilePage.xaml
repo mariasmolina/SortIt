@@ -51,8 +51,8 @@
         </Grid>
 
         <HorizontalStackLayout Spacing="12">
+            <Button Text="{Binding Button_Save}" BackgroundColor="#8FBC8F" TextColor="White" FontAttributes="Bold" Clicked="OnSave" CornerRadius="12" Margin="0,20,0,0" />
             <Button Text="{Binding Button_Cancel}" BackgroundColor="#CFD8DC" TextColor="#263238" Clicked="OnCancel" CornerRadius="12" Margin="0,20,0,0" />
-            <Button Text="{Binding Button_Save}" BackgroundColor="#2E7D32" TextColor="White" Clicked="OnSave" CornerRadius="12" Margin="0,20,0,0" />
         </HorizontalStackLayout>
 
     </VerticalStackLayout>

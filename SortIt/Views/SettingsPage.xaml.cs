@@ -79,6 +79,8 @@ public partial class SettingsPage : ContentPage
 
             LightThemeLabel.TextColor = Color.FromArgb("#333333");
             DarkThemeLabel.TextColor = Color.FromArgb("#1B5E20");
+            LightThemeTint.TintColor = Color.FromArgb("#333333");
+            DarkThemeTint.TintColor = Color.FromArgb("#1B5E20");
         }
         else
         {
@@ -86,6 +88,8 @@ public partial class SettingsPage : ContentPage
 
             LightThemeLabel.TextColor = Color.FromArgb("#1B5E20");
             DarkThemeLabel.TextColor = Color.FromArgb("#333333");
+            LightThemeTint.TintColor = Color.FromArgb("#1B5E20");
+            DarkThemeTint.TintColor = Color.FromArgb("#333333");
         }
 
         if (animate == true)

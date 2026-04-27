@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:resx="clr-namespace:SortIt.Resources.Constants"
              xmlns:vm="clr-namespace:SortIt.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="SortIt.Views.SettingsPage"
              Title="{Binding Settings_Title}"
              Background="{DynamicResource PageBackgroundBrush}"
@@ -143,9 +144,14 @@
                                                    HorizontalOptions="Center"
                                                    VerticalOptions="Center"
                                                    Spacing="6">
-                                <Image Source="{x:Static resx:ImageResources.sun}"
+                                <Image x:Name="LightThemeImage"
+                                       Source="{x:Static resx:ImageResources.sun}"
                                        WidthRequest="22"
-                                       HeightRequest="22"/>
+                                       HeightRequest="22">
+                                       <Image.Behaviors>
+                                           <toolkit:IconTintColorBehavior x:Name="LightThemeTint"/>
+                                       </Image.Behaviors>
+                                </Image>
                                 <Label x:Name="LightThemeLabel"
                                        Text="{Binding Theme_Light}"
                                        FontSize="14"
@@ -157,9 +163,14 @@
                                                    HorizontalOptions="Center"
                                                    VerticalOptions="Center"
                                                    Spacing="6">
-                                <Image Source="{x:Static resx:ImageResources.moon}"
+                                <Image x:Name="DarkThemeImage"
+                                       Source="{x:Static resx:ImageResources.moon}"
                                        WidthRequest="22"
-                                       HeightRequest="22"/>
+                                       HeightRequest="22">
+                                    <Image.Behaviors>
+                                        <toolkit:IconTintColorBehavior x:Name="DarkThemeTint"/>
+                                    </Image.Behaviors>
+                                </Image>
                                 <Label x:Name="DarkThemeLabel"
                                        Text="{Binding Theme_Dark}"
                                        FontSize="14"
@@ -209,7 +220,7 @@
                     CornerRadius="15"
                     Padding="16"
                     FontAttributes="Bold"
-                    BackgroundColor="#2E7D32"
+                    BackgroundColor="#8FBC8F"
                     HorizontalOptions="FillAndExpand">
                 </Button>
 
@@ -225,8 +236,7 @@
                         HorizontalOptions="FillAndExpand">
                 </Button>
             </HorizontalStackLayout>
-            
-           
+            <!--
             <Button Text="{Binding TestLevelUpButton}"
                     Margin="0,30,0,10"
                     Clicked="OnTestLevelUpClicked"
@@ -238,8 +248,7 @@
                     Padding="10"
                     FontAttributes="Bold">
             </Button>
-            
-
+            -->
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

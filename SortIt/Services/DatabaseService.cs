@@ -93,6 +93,7 @@ namespace SortIt.Services
             {
                 p.Xp = 0;
                 _db.DeleteAll<GameSessionStat>();
+                _db.DeleteAll<WasteTypeStat>();
             }
 
             _db.Update(p);
