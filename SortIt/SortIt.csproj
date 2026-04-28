@@ -63,7 +63,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Services\GameService.cs" />
 	  <Compile Remove="Services\IWasteCatalog.cs" />
 	  <Compile Remove="Services\WasteCatalog.cs" />
 	  <Compile Remove="Views\GamePage - Copy.xaml.cs" />
